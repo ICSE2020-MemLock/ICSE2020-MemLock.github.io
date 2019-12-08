@@ -1,0 +1,5090 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147130731-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147130731-1');
+</script>
+<title>MemLock</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link rel="shortcut icon" href="Html/images/your_ico.ico" type="image/x-icon">
+<link rel="icon" href="Html/images/your_ico.ico" type="image/x-icon">
+<link href="Html/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="Html/css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="Html/css/swipebox.css">
+<!--//Custom Theme files-->
+<!--js-->
+<script src="Html/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!--web-fonts-->
+<!--<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+<!--<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="Html/js/move-top.js"></script>
+<script type="text/javascript" src="Html/js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div id="home" class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div>
+					<br>
+					<h1><br><font size="20" face="verdana" color="white"><B>MemLock</B></font></h1>
+					<h3><br><font size="6" color="white"><B>Automatically Generating Inputs On Excessive Memory Consumption</B></font></h3>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Navigation
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#map" class="scroll">Side Map</a></li>
+						<li><a href="#impact" class="scroll">Security Impact</a></li>
+						<li><a href="#result" class="scroll">Experimental result</a></li>
+						<li><a href="#CVE-2019-6293" class="scroll">Case Study</a></li>
+						<li><a href="#video" class="scroll">Video</a></li>
+						<li><a href="#gallery" class="scroll">Gallery</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--//top-nav-->
+
+    <!--about-->
+    <div id="about" class="about">
+        <div class="container">
+            <h3 class="title"> About MemLock</h3>
+            <div class="col-md-8 about-left" style="text-indent:2em">
+                <p><font color="black" size="3.5">Uncontrolled memory consumption is one kind of software security weaknesses. It can also become a security-critical vulnerability when attackers can control the input to consume a large amount of memory to launch a Denial-of-Service attack. However, detecting such vulnerability is challenging due to the fact that it requires long executions with well-crafted inputs to trigger excessive memory consumption, while the state-of-the-art testing techniques have mostly focused on code coverage. To tackle this challenge, we propose a feedback-directed fuzzing technique, named MemLock, to automatically generate those memory-consuming inputs to trigger memory consumption bugs. We guide the fuzzing process using memory consumption information so that our approach is general and does not require any domain knowledge. We perform a thorough evaluation for MemLock on 14 widely-used real-world programs. Our experiment results show that MemLock substantially outperforms the state-of-the-art fuzzing techniques, including AFL, AFLfast, PerfFuzz, FairFuzz and QSYM, in discovering memory consumption bugs. During the experiments, we discovered several previously unknown excessive memory consumption vulnerabilities and received 17 new CVEs.</font></p>
+            </div>
+            <div class="col-md-4 about-right">
+                <img src="Html/images/mlogo2.jpg" width="85%" alt=""/>
+                <img src="Html/images/mlogo.jpg" width="85%" alt=""/>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+	<!--//about-->
+	
+	<!--github-->
+    <div id="github" class="about">
+		<div class="container">
+			<h3 class="title"> Github</h3>
+			<div class="col-md-8 about-left" style="text-indent:2em">
+				<p><br></p>
+				<p><br></p>
+				<p style="text-indent:0em">MemLock is available on Github.</p>
+				<p><br></p>
+				<p style="text-indent:4em"><font color="black" size="5.5"><a href="https://github.com/ICSE2020-MemLock/MemLock">https://github.com/ICSE2020-MemLock/MemLock</a></font></p>
+			</div>
+			<div class="col-md-4 about-right">
+				<img src="Html/images/githubbig.jpg" width="85%" alt=""/>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//github-->
+
+	<!--Map -->
+	<div class="work" id="map">
+		<div class="container">
+			<h3 class="title">Site Map</h3>
+			<div class="contact-row">
+				<div class="col-md-12 contact-right" align="left">
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<p><font color="black" size="4">This website contains the following pages:</font></p>
+						<p><br></p>
+						<font color="black" size="3.5">
+						<ol>
+							<li><a href="#about" class="scroll"><B>About MemLock</B></a></li></li>
+								<ul style="text-indent:2em">MemLock is a dedicated fuzzing technique to automatically discover memory consumption related bugs, thorough generating inputs on excessive memory consumption.</ul>
+							<li><a href="#github" class="scroll"><B>Github</B></a></li></li>
+								<ul style="text-indent:2em">MemLock is available on Github.</ul>
+							<li><a href="#conBugs" class="scroll"><B>Memory Consumption Related Bugs</B></a></li>
+								<ul style="text-indent:2em">We focus on three types of memory consumption related bugs: "CWE-674: uncontrolled-recursion", "CWE-789: uncontrolled-memory-allocation", and "CWE-401: memory leak".</ul>
+							<li><a href="#approach" class="scroll"><B>MemLock's Solution</B></a></li>
+								<ul style="text-indent:2em">We guide the fuzzing process using the coverage information as well as memory consumption information.</ul>	
+							<li><a href="#impact" class="scroll"><B>Practical Security Impact of MemLock</B></a></li>
+								<ul style="text-indent:2em">With MemLock, we have discovered many previously unknown security-critical vulnerabilities. These vulnerabilities were not previously reported and rated as a medium-security risk. We informed the maintainers, and Mitre assigned 17 CVEs. Our work leads to most of these bugs being patched.</ul>
+							<li><a href="#dataset" class="scroll"><B>Evaluation Dataset</B></a></li>
+								<ul style="text-indent:2em">We select evaluation benchmarks considering several factors, e.g., popularity, frequency of being tested, development activeness, and functional diversity. We also open the detail information of our benchmark program, including the POC files and the initial seeds, at <U><a href="https://github.com/ResearchReview/MemLock_Benchmark">github: MemLock_Benchmark</a></U> to facilitate the research in this area. </ul>
+							<li><a href="#result" class="scroll"><B>Experiment Result and Raw Data</B></a></li>
+								<ul style="text-indent:2em">In this page, we provide the Detail experimental result, together with the raw experimental data and additional analysis. We consider both unique bugs and unique crashes each fuzzer finds in the fuzzing process. Since MemLock is to stress the space complexity issues of programs, we also distill the memory consumption of each seed in the pool. Finally, we analyze the impact of MemLock's guidance mechanism on both coverage and execution speed. We also apply statistical tests to the experimental results. We use the Mann Whitney U-test to determine the stochastic ranking of all the compared fuzzers, and the A<sub>12</sub> statistics to show the possibility that one fuzzer is better than the other according to all the runs.</ul>
+							<li><a href="#seed" class="scroll"><B>Quality of seeds on Memory Consumption</B></a></li>
+								<ul style="text-indent:2em">In this page, we use experiments to observe the test input distribution according to memory consumption. MemLock seeks to generate test inputs that consume more and more memory, which is quite different from other fuzzers.</ul>
+							<li><a href="#overhead" class="scroll"><B>Additional Evaluation for Overhead</B></a></li>
+								<ul style="text-indent:2em">Since MemLock intentionally keeps seeds that increase memory consumption, it is likely that test executions over time will take longers, thus reducing the efficiency of the fuzzer. Thus, we also analyze the impact of MemLock's guidance mechanism on both coverage and execution speed.</ul>
+							<li><a href="#CVE-2019-6293" class="scroll"><B>Case Study: CVE-2019-6293</B></a></li>
+								<ul style="text-indent:2em">An issue was discovered in the function mark_beginning_as_normal in nfa.c in flex 2.6.4. There is a stack exhaustion problem caused by the mark_beginning_as_normal function making recursive calls to itself in certain scenarios involving lots of '*' characters. Remote attackers could leverage this vulnerability to cause a denial-of-service.</ul>
+							<li><a href="#CVE-2018-17985" class="scroll"><B>Case Study: CVE-2018-17985</B></a></li>
+								<ul style="text-indent:2em">An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption problem caused by the cplus_demangle_type function making recursive calls to itself in certain scenarios involving many 'P' characters.</ul>
+							<li><a href="#CVE-2018-4868" class="scroll"><B>Case Study: CVE-2018-4868</B></a></li>
+								<ul style="text-indent:2em">The Exiv2::Jp2Image::readMetadata function in jp2image.cpp in Exiv2 0.26 allows remote attackers to cause a denial of service (excessive memory allocation) via a crafted file.</ul>
+							<li><a href="#related" class="scroll"><B>Fuzzing Related Work</B></a></li>
+								<ul style="text-indent:2em">We have examined 63 recently published papers on fuzz testing located by perusing top-conference proceedings and other quality venues, and studied their appoarch. We made a simple comb and summary. Our investigation of fuzzing can also be seen in the summary: <a href="https://researchreview.github.io/RelatedWork/"><U>researchreview.github.io/RelatedWork</U></a>.</ul>
+							<li><a href="#video" class="scroll"><B>Video of Tool Demo for Explanation</B></a></li>
+								<ul style="text-indent:2em">We show a video of our tool demo.</ul>
+						</ol>
+						</font>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//Map -->
+
+	<!--conBugs-->
+	<div id="conBugs" class="about">
+		<div class="container">
+			<h3 class="title">Memory Consumption Related Bugs</h3>
+			<div class="contact-row">
+			<div class="col-md-12">
+				<p style="text-indent:2em"><font color="black" size="3.5">As the definition in CWE 400, "The software does not properly control the allocation and maintence of a limited resource thereby enabling an actor to influence the amount of resources consumed, eventually leading to the exhaustion of available resources". If an attacker can trigger the allocation of these limited resources, but the number or size of the resources is not controlled, then the attacker could cause a denial of service that consumes all available resources. This would prevent valid users from accessing the software, and it could potentially have an impact on the surrounding environment. For example, a memory exhaustion attack against an application could slow down the application as well as its host operating system.</font></p>
+				<p style="text-indent:2em"><font color="black" size="3.5">However, memory consumption bugs are essentially different from memory corruption vulnerabilities, because they are primarily in relation to the problem of uncontrolled memory resource consumption. In our work, we focus on three types of memory consumption related bugs: <I>uncontrolled-recursion</I>, <I>uncontrolled-memory-allocation</I>, and <I>memory leak</I>.</font></p>
+				<p style="text-indent:2em"><font color="black" size="3.5">
+					<ul><a href="">CWE-674: Uncontrolled Recursion: </a>The product does not properly control the amount of recursion that takes place, which consumes excessive resources, such as allocated memory or the program stack.</ul>
+					<ul><a href="">CWE-789: Uncontrolled Memory Allocation: </a>The product allocates memory based on an untrusted size value, but it does not validate or incorrectly validates the size, allowing arbitrary amounts of memory to be allocated.</ul>
+					<ul><a href="">CWE-401: Memory Leak: </a>The software does not sufficiently track and release allocated memory after it has been used, which slowly consumes remaining memory.</ul>
+				</font></p>
+			</div>
+			<div class="clearfix"> </div>
+			</div>	
+		</div>
+	</div>
+	<!--//conBugs-->
+
+	<!--approach -->
+	<div class="work" id="approach">
+		<div class="container">
+			<h3 class="title">MemLock's Solution</h3>
+			<div class="col-md-12">
+				<div align="center">
+				<img src="Html/images/MemLock.jpg" width="95%" alt=""/>
+				<p></br></p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+
+			<div class="col-md-12 contact-right" >
+				<p style="text-indent:2em"><font color="black" size="3">We present MemLock to enhance grey-box fuzzing to find memory consumption bugs. The coverage information guides to explore different program paths, and the memory consumption information guides the program path to consume more memory. This input can be further mutated so that the newly generated input consumes more and more memory. After some mutations, MemLock is expected to generate an input whereby the memory consumption exceeds the available memory.</font></p>
+				<p style="text-indent:2em"><font color="black" size="3">The Figure above shows the workflow of MemLock, which contains two main components: <I>static analysis</I> and <I>fuzzing loop</I>. In particular, the static analysis takes the <I>program source code</I> as the input, and analyzes three kinds of information: <I>control flow graph</I>, <I>call graph</I>, and <I>memory operations</I>. The static analysis in MemLock helps decide where to instrument and what to instrument. The control flow graph information is used to collect the branch coverage; the call graph information aids to instrument the function call entries and returns. Based on the memory operation statements, MemLock instruments the locations of memory allocation and free.</font></p>
+				<p style="text-indent:2em"><font color="black" size="3">Once the program is instrumented, MemLock enters the continuous fuzzing loop to detect memory consumption bugs. Given the initial seeds, MemLock selects a seed <I>s</I> from the seed pool. As for the seed <I>s</I>, MemLock uses the mutation strategy to generate the new inputs (test cases). MemLock then runs the generated inputs against the instrumented program, and collects their memory consumption information and branch coverage information. If the generated seeds consume more memory or have new branch coverage, they are retained as interesting seeds. MemLock prioritizes these interesting seeds and adds them into the seed pool, again. MemLock repeats this process until reaching time or resource budget limits.</font></p>
+				<div class="clearfix"></div>
+				<p><br></p>
+				<p><br></p>
+			</div>
+
+			<div class="col-md-12" id="seedupdate_id">
+				<h4 align="center"> <B><a name="seedupdate">An Example to Illustrate the Effectiveness of Seed Updating Scheme<a></B></h4>
+				<p><br></p>
+				<div align="left">
+					<p style="text-indent:2em"><font color="black" size="3">Consider the following simple example, the program has only one path. It requests memory resources in line 8 through <I>malloc()</I> function. The size of allocated memory is determined by the user's input. If the allocation in line 8 fails, the return value of <I>buf</I> will be NULL, leading to the program crash (Null-pointer deference in line 9). In the following, we will use this example to describe how Memlock's seed updating scheme works.</font></p>
+					<p><br></p>
+					<p><br></p>
+					<div align="center">
+						<img src="Html/images/seedupdateExample.png" width="75%" alt="" />
+					</div>
+					<p><br></p>
+					<p><br></p>
+					<p style="text-indent:2em"><font color="black" size="3">let us assume the fuzzer holds a initial seed <code>input() = 10</code> in line 7. After some mutations, the fuzzers may generate <code>input () = 20</code>, <code>input () = 1000</code>, <code>input () = 10000</code>, etc., which make the allocation size in line 8 increase. AFL, SlowFuzz and PerfFuzz will discard these mutants, since these mutants do not increase the coverage or the number of instructions. It is clearly that <code>input () = 20</code> consumes much more memory  than <code>input () = 10</code> and is closer to running out of memory. Memlock uses a novel seed updating scheme to replace the original seed <code>input () = 20</code> with the generated input <code>input () = 10</code>, instead of adding <code>input () = 20</code> to the seed pool directly. We propose a simple yet effective **seed updating scheme** that allows MemLock to keep on generating new seeds with increased peak memory consumption for each already-covered path. This is essentially different from Slowfuzz and PerfFuzz. </font></p>
+					<p style="text-indent:2em"><font color="black" size="3">The following figure describes the workflow of MemLock's seed updating scheme.</font></p>
+					<p><br></p>
+					<div align="center">
+						<img src="Html/images/seedupdateExplanation.png" width="100%" alt="" />
+					</div>
+					<p><br></p>
+					<p><br></p>
+					<p><br></p>
+					<p style="text-indent:2em"><font color="black" size="3"> </font></p>
+					<div align="center">
+						<img src="Html/images/seedupdateExplanation2.png" width="65%" alt="" />
+					</div>
+					<p><br></p>
+				</div>
+				<div class="clearfix"></div>
+				<p><br></p>
+				<p><br></p>
+			</div>
+
+			<div class="col-md-12 contact-right" >
+			<p style="text-indent:2em"><font color="black" size="3">Read the <a>MemLock paper</a> for more details.</font></p>
+			</br></div>
+			<div class="clearfix"></div>
+			<p><br></p>
+			<p><br></p>
+
+			<div class="col-md-12 contact-right" >
+				<div class="contact-form" align="center">
+					<a href=""><input type="submit" value="Download PDF"></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--//approach -->
+
+
+	<!--impact-->
+	<div id="impact" class="about">
+		<div class="container">
+			<h3 class="title">Practical Security Impact</h3>
+			<p style="text-indent:2em"><font color="black" size="3">With MemLock, we have responsibly disclosed several previously unknown security-critical vulnerabilities. These vulnerabilities were not previously reported and rated as a medium-security risk. We informed the maintainers, and Mitre assigned 17 CVEs for these issues. Among these 17 CVEs, 9 CVEs are uncontrolled-recursion vulnerabilities, 6 CVEs are vulnerabilities due to uncontrolled-memory-allocation issues, and 2 CVEs are about memory leak vulnerabilities. An attacker might leverage these vulnerabilities to launch an attack, by providing well-conceived inputs that trigger excessive memory consumption. Our report made these vulnerable programs being patched. At the time of writing, 12 of these vulnerabilities have been patched. </font></p>
+			<p style="text-indent:2em"><font color="black" size="3">Our bug report has received wide acclaim in the community. We are confident that MemLock is effective and viable in practice.</font></p>
+			<p><br></p>
+			<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+				<li class="resp-tab-item"><span>Bugs Reported Mass Reaction</span></li>
+			</ul>
+
+			<div class="title">
+				<div class="tab_img">
+					
+					<p style="text-indent:2em"><font color="black" size="3">We investigated an uncontrolled recursive vulnerability we identified. Users can directly control the depth of recursive function calls. Then, the developers also confirm the existence of this vulnerability and recognizes that uncontrolled recursion is bad behavior. And the developers reply to us, "Thanks for presenting your analysis of the defect. It is trivially handled by the user as you say bug a default recursion limit would be nice. Do you plan to implement that feature to fight off the CVE hounds? Thanks". Finally, We help developers fix this vulnerability by restricting recursion.</font></p>
+
+					<div class="col-md-12">
+						<div class="grid">
+							<a href="Html/images/NasmReplay.png" class="swipebox" title="bug report">
+								<img src="Html/images/NasmReplay.png" width="85%" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>Program crash due to Uncontrolled Recursion</h3>
+									<p></p>
+								</div>
+							</a>	
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<div><p style="text-indent:2em"><br></p></div>
+					<div>
+					<p style="text-indent:2em"><font color="black" size="3">In another example, we found an uncontrolled memory allocation vulnerability through MemLock. The conditions for triggering this vulnerability are very harsh, and a large value is required to fail the memory allocation. After the memory allocation failed, the program crashed directly. We worked with the author to artificially analyze the vulnerability. Finally, we draw some conclusions. The program would crash under two situations: 1. try to allocate zero sized data; 2. try to allocate 1TB or more memory. The autore reply, "I have added a workaround for the latter case, but it is recommended to check the retrun value of <I>malloc</I>. You can Contribute PR".</font></p>
+					</div>
+
+					<div class="col-md-12">
+						<div class="grid">
+							<a href="Html/images/OOM1.png" class="swipebox" title="bug report">
+								<img src="Html/images/OOM1.png" width="85%" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>Program crash due to Uncontrolled Recursion</h3>
+									<p></p>
+								</div>
+							</a>	
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<div><p style="text-indent:2em"><br></p></div>
+					<p style="text-indent:2em"><font color="black" size="3">Other Examples</font></p>
+
+					<div class="col-md-12">
+						<div class="grid">
+							<a href="Html/images/Thank.png" class="swipebox" title="bug report">
+								<img src="Html/images/Thank.png" width="85%" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3></h3>
+									<p></p>
+								</div>
+							</a>	
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="grid">
+							<a href="Html/images/Fix3.png" class="swipebox" title="bug report">
+								<img src="Html/images/Fix3.png"  width="85%" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3></h3>
+									<p></p>
+								</div>
+							</a>	
+						</div>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+			<p><br></p>
+			<p style="text-indent:2em"><font color="black" size="3">In a word, MemLock is well received by the community, and we are confident that MemLock is effective and viable in practice.</font></p>
+			<p><br></p>
+			
+
+			<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+				<li class="resp-tab-item"><span>Security-critical Vulnerabilities MemLock Found</span></li>
+			</ul>
+
+			<p style="text-indent:2em"><font color="black" size="3">To ensure anonymity, the CVEs ID are not made available in the review phase. We will make in available soon, togeter with a set of case studies.</font></p>
+			<p><br></p>
+			<h4 align="center"><B>Security-critical Vulnerabilities(15 CVEs)</B></h4>
+			<div class="table-container-outer">
+			<div class="table-container">
+			<table align="center" border="1" cellpadding="10px" text-align="center">
+			<thead>
+			<tr>
+			<th>CVEs</th>
+			<th>Vulnerability Type</th>
+			<th>Vulnerability Description</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6293">CVE-2019-6293</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in the function mark_beginning_as_normal in nfa.c in flex 2.6.4. There is a stack exhaustion problem caused by the mark_beginning_as_normal function making recursive calls to itself in certain scenarios involving lots of '*' characters. Remote attackers could leverage this vulnerability to cause a denial-of-service.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6292">CVE-2019-6292</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in singledocparser.cpp in yaml-cpp (aka LibYaml-C++) 0.6.2. Stack Exhaustion occurs in YAML::SingleDocParser, and there is a stack consumption problem caused by recursive stack frames: HandleCompactMap, HandleMap, HandleFlowSequence, HandleSequence, HandleNode. Remote attackers could leverage this vulnerability to cause a denial-of-service via a cpp file.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6291">CVE-2019-6291</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in the function expr6 in eval.c in Netwide Assembler (NASM) through 2.14.02. There is a stack exhaustion problem caused by the expr6 function making recursive calls to itself in certain scenarios involving lots of '!' or '+' or '-' characters. Remote attackers could leverage this vulnerability to cause a denial-of-service via a crafted asm file.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6290">CVE-2019-6290</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An infinite recursion issue was discovered in eval.c in Netwide Assembler (NASM) through 2.14.02. There is a stack exhaustion problem resulting from infinite recursion in the functions expr, rexp, bexpr and cexpr in certain scenarios involving lots of '{' characters. Remote attackers could leverage this vulnerability to cause a denial-of-service via a crafted asm file.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18701">CVE-2018-18701</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption vulnerability resulting from infinite recursion in the functions next_is_type_qual() and cplus_demangle_type() in cp-demangle.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via an ELF file, as demonstrated by nm.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18700">CVE-2018-18700</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption vulnerability resulting from infinite recursion in the functions d_name(), d_encoding(), and d_local_name() in cp-demangle.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via an ELF file, as demonstrated by nm.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18484">CVE-2018-18484</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there is a stack consumption problem caused by recursive stack frames: cplus_demangle_type, d_bare_function_type, d_function_type.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17985">CVE-2018-17985</a></strong></td>
+			<td>CWE-674: Uncontrolled Recursion</td>
+			<td>An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption problem caused by the cplus_demangle_type function making recursive calls to itself in certain scenarios involving many 'P' characters.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7704">CVE-2019-7704</a></strong></td>
+			<td>CWE-789: Uncontrolled Memory Allocation</td>
+			<td>wasm::WasmBinaryBuilder::readUserSection in wasm-binary.cpp in Binaryen 1.38.22 triggers an attempt at excessive memory allocation, as demonstrated by wasm-merge and wasm-opt.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7698">CVE-2019-7698</a></strong></td>
+			<td>CWE-789: Uncontrolled Memory Allocation</td>
+			<td>An issue was discovered in AP4_Array<AP4_CttsTableEntry>::EnsureCapacity in Core/Ap4Array.h in Bento4 1.5.1-627. Crafted MP4 input triggers an attempt at excessive memory allocation, as demonstrated by mp42hls, a related issue to CVE-2018-20095.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7148">CVE-2019-7148</a></strong></td>
+			<td>CWE-789: Uncontrolled Memory Allocation</td>
+			<td>An attempted excessive memory allocation was discovered in the function read_long_names in elf_begin.c in libelf in elfutils 0.174. Remote attackers could leverage this vulnerability to cause a denial-of-service via crafted elf input, which leads to an out-of-memory exception. NOTE: The maintainers believe this is not a real issue, but instead a "warning caused by ASAN because the allocation is big. By setting ASAN_OPTIONS=allocator_may_return_null=1 and running the reproducer, nothing happens."</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20652">CVE-2019-20652</a></strong></td>
+			<td>CWE-789: Uncontrolled Memory Allocation</td>
+			<td>An attempted excessive memory allocation was discovered in the function tinyexr::AllocateImage in tinyexr.h in tinyexr v0.9.5. Remote attackers could leverage this vulnerability to cause a denial-of-service via crafted input, which leads to an out-of-memory exception.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18483">CVE-2018-18483</a></strong></td>
+			<td>CWE-789: Uncontrolled Memory Allocation</td>
+			<td>The get_count function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31, allows remote attackers to cause a denial of service (malloc called with the result of an integer-overflowing calculation) or possibly have unspecified other impact via a crafted string, as demonstrated by c++filt.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20657">CVE-2018-20657</a></strong></td>
+			<td>CWE-401: Memory Leak</td>
+			<td>The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.</td>
+			</tr>
+			<tr>
+			<td><strong><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20002">CVE-2018-20002</a></strong></td>
+			<td>CWE-401: Memory Leak</td>
+			<td>The _bfd_generic_read_minisymbols function in syms.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31, has a memory leak via a crafted ELF file, leading to a denial of service (memory consumption), as demonstrated by nm.</td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</div>
+			<p><br></p>
+		</div>
+	</div>
+	<!--//impact-->
+
+	<!--dataset -->
+	<div class="work" id="dataset">
+		<div class="container">
+			<h3 class="title">Evaluation Dataset</h3>
+			<div class="contact-row">
+				<div class="col-md-12 contact-right" align="center">
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<div class="col-md-12">
+							<p>We also provide a repo containing the benchmarks, CVE information, as well as the inital seeds to replicate our experiments.</p>
+							<p>MemLock's evaluation Data Set: <a href="https://github.com/ResearchReview/MemLock_Benchmark">https://github.com/ResearchReview/MemLock_Benchmark</a></p>
+							<p><br></p>
+							<div class="table-container-outer">
+							<div class="table-container">
+							<table border="1" cellpadding="5px" cellspacing="0px" class="ke-zeroborder" style="font-size:13px;font-family:serif;">
+								<tbody>
+									<tr>
+										<td height="20" class="xl69" width="80" align="center">
+											<B>Target Program
+										</td>
+										<td class="xl69" width="80" align="center">
+											<B>Project</B>
+										</td>
+										<td class="xl69" width="80" align="center">
+											<B>Version</B>
+										</td>
+										<td class="xl70" width="80" align="center">
+											<B>SLoC</B>
+										</td>
+										<td class="xl69" width="80" align="center">
+											<B>Input Format</B>	
+										</td>
+										<td class="xl69" width="600" align="center">
+											<B>Test Instruction</B>
+										</td>
+										<td class="xl69" width="120" align="center">
+											<B>Detail Information</B>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											mjs
+										</td>
+										<td class="xl65">
+											mjs
+										</td>
+										<td class="xl68">
+											1.20.1
+										</td>
+										<td class="xl72" align="right">
+											40,440
+										</td>
+										<td class="xl68">
+											js
+										</td>
+										<td class="xl65">
+											mjs @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/mjs">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/mjs</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											cxxfilt
+										</td>
+										<td class="xl65">
+											Bintuils
+										</td>
+										<td class="xl68">
+											2.31
+										</td>
+										<td class="xl72" align="right">
+											1,757,662
+										</td>
+										<td class="xl68">
+											string
+										</td>
+										<td class="xl65">
+											cxxfilt -t
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/cxxfilt">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/cxxfilt</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											nm
+										</td>
+										<td class="xl65">
+											Bintuils
+										</td>
+										<td class="xl68">
+											2.31
+										</td>
+										<td class="xl72" align="right">
+											1,757,662
+										</td>
+										<td class="xl68">
+											ELF
+										</td>
+										<td class="xl65">
+											nm -C @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/nm">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/nm</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											nasm
+										</td>
+										<td class="xl65">
+											NASM
+										</td>
+										<td class="xl68">
+											2.14.03rc1
+										</td>
+										<td class="xl72" align="right">
+											105,178
+										</td>
+										<td class="xl68">
+											ASM
+										</td>
+										<td class="xl65">
+											nasm -f bin $POC -o /dev/null
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/nasm">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/nasm</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											flex
+										</td>
+										<td class="xl65">
+											Flex
+										</td>
+										<td class="xl68">
+											2.6.4
+										</td>
+										<td class="xl72" align="right">
+											27,653
+										</td>
+										<td class="xl68">
+											c/cpp
+										</td>
+										<td class="xl65">
+											flex @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/flex">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/flex</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											prase
+										</td>
+										<td class="xl65">
+											Yaml-cpp
+										</td>
+										<td class="xl68">
+											0.6.2
+										</td>
+										<td class="xl72" align="right">
+											58,662
+										</td>
+										<td class="xl68">
+											c/cpp
+										</td>
+										<td class="xl65">
+											parse @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/yaml-cpp">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/yaml-cpp</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											sassc
+										</td>
+										<td class="xl65">
+											Libsass
+										</td>
+										<td class="xl68">
+											3.5.4
+										</td>
+										<td class="xl67" align="right">
+											27849
+										</td>
+										<td class="xl68">
+											text
+										</td>
+										<td class="xl65">
+											sassc @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/libsass">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/libsass</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											yara
+										</td>
+										<td class="xl65">
+											Yara
+										</td>
+										<td class="xl68">
+											3.5.0
+										</td>
+										<td class="xl72" align="right">
+											45,722
+										</td>
+										<td class="xl68">
+											text
+										</td>
+										<td class="xl65">
+											yara @@ strings
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/yara">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/yara</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											readelf
+										</td>
+										<td class="xl65">
+											binutils
+										</td>
+										<td class="xl68">
+											2.28
+										</td>
+										<td class="xl66" align="right">
+											1,844,210
+										</td>
+										<td class="xl68">
+											elf
+										</td>
+										<td class="xl65">
+											readelf -a @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/readelf">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/readelf</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											exiv2
+										</td>
+										<td class="xl65">
+											Exiv2
+										</td>
+										<td class="xl71">
+											0.26
+										</td>
+										<td class="xl66" align="right">
+											84,430
+										</td>
+										<td class="xl68">
+											jpeg
+										</td>
+										<td class="xl65">
+											exiv2 -pX @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/exiv2">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/exiv2</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											opj_decompress
+										</td>
+										<td>
+											OpenJPEG
+										</td>
+										<td class="xl68">
+											2.3.0
+										</td>
+										<td class="xl66" align="right">
+											243,555
+										</td>
+										<td class="xl68">
+											jpeg
+										</td>
+										<td class="xl65">
+											opj_decompress -i @@ -o ./tmp.png
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/openjpeg">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/openjpeg</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21">
+											mp42hls
+										</td>
+										<td>
+											Bento4
+										</td>
+										<td class="xl68">
+											v1.5.1-627
+										</td>
+										<td class="xl66" align="right">
+											78,674
+										</td>
+										<td class="xl68">
+											mp4
+										</td>
+										<td class="xl65">
+											mp42hls @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/Bento4">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/Bento4</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											listswf
+										</td>
+										<td class="xl65">
+											libming&nbsp;
+										</td>
+										<td class="xl68">
+											0.4.8
+										</td>
+										<td class="xl66" align="right">
+											92,100
+										</td>
+										<td class="xl68">
+											swf
+										</td>
+										<td class="xl65">
+											listswf @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/libming">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/libming</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											jasper
+										</td>
+										<td class="xl65">
+											jasper
+										</td>
+										<td class="xl68">
+											2.0.14
+										</td>
+										<td class="xl66" align="right">
+											44,925
+										</td>
+										<td class="xl68">
+											jpeg
+										</td>
+										<td class="xl65">
+											jasper --input @@ --output test.bmp --output-format bmp
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/jasper">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/jasper</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											zzdir
+										</td>
+										<td class="xl65">
+											ZZIPlib
+										</td>
+										<td class="xl68">
+											0.13.68
+										</td>
+										<td class="xl66" align="right">
+											15,862
+										</td>
+										<td class="xl68">
+											zip
+										</td>
+										<td class="xl65">
+											zzdir @@
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/zziplib">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/zziplib</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl65">
+											podofoimgextract
+										</td>
+										<td class="xl65">
+											PoDoFo
+										</td>
+										<td class="xl68">
+											0.9.5
+										</td>
+										<td class="xl66" align="right">
+											290,586
+										</td>
+										<td class="xl68">
+											pdf
+										</td>
+										<td class="xl65">
+											podofoimgextract @@ ./out
+										</td>
+										<td class="xl65">
+											<a href="https://github.com/ResearchReview/MemLock_Benchmark/tree/master/podofo">https://github.com/ResearchReview/MemLock_Benchmark/tree/master/podofo</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//dataset -->
+
+	<!--result -->
+	<div class="about" id="result">
+		<div class="container">
+			<h3 class="title">Experiment Result</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="center">
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<div class="col-md-12">
+							<h3><a name="crashes">Unique Crashes Evaluation<a></h3>
+							<div align="left">
+								<p><br></p>
+								<p style="text-indent:2em"><font color="black" size="3">To evaluate the effectiveness of fuzzers, a direct measurement is the number of unique crashes found by different fuzzers. It is believed that, more unique crashes usually indicate higher chances of covering more unique vulnerabilities.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">The table below shows the number of unique crashes found by 6 different fuzzers within 24 hours in the benchmark programs. It is worth noting that, we only count the unique crashes related to memory consumption. Out of the 17 groups of experiments, MemLock performs best in the 14 (82.4%) group of experiments among 6 different fuzzers, as shown in column <I>MemLock</I>. In total, MemLock finds 2009 unique memory consumption-related crashes in the benchmark programs, improving by 59.2%, 70.5%, 76.9%, 98.1% and 66.7% respectively, compared to state-of-the-art fuzzers AFL, AFLfast, PerfFuzz, FairFuzz and QSYM. Especially, MemLock is able to find unique crashes in all benchmark programs, while other 5 state-of-the-art fuzzers may not find unique crashes in some benchmark programs. For example, other 5 state-of-the-art fuzzers cannot find any unique crashes in the program <I>flex</I>, however, MemLock can find 61 unique crashes within 24 hours.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">Following Klees' recommendation, we also conduct the statistic test for the results. The A<sub>12</sub> statistic measures the probability that one fuzzer outperforms another fuzzer, as shown in columns with the heading A<sub>12</sub>. Further, we use <I>Mann-Whitney U</I> to measure the statistical significance of performance gain. When significant, we mark the corresponding A<sub>12</sub> values in the bold. Out of 85 A<sub>12</sub> values in the table, 60 (70.6%) A<sub>12</sub> values are bold and exceeding the conventionally large effect size (0.71). Thus, we can conclude that \toolname significantly outperforms other 5 state-of-the-art fuzzers in most benchmark programs.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">As MemLock focuses on the space complexity issues, it prefers the longer test cases and thus may degrade the capability to find other types of vulnerabilities. For example, longer test cases tend to trigger uncontrolled-recursion issues. Therefore, we also evaluate the capability to find other types of crashes. In the benchmark programs, the state-of-the-art fuzzers MemLock, AFL, AFLfast, PerfFuzz, FairFuzz and QSYM find 77, 239, 228, 189, 276 and 236 other types of unique crashes, respectively.</font></p>
+								<p><br></p>
+							</div>
+							<div class="clearfix"></div>
+							<p><br></p>
+							<div class="table-container-outer">
+							<div class="table-container">
+							<table border="1" cellpadding="5px" cellspacing="0px" class="ke-zeroborder" style="font-size:11px;font-family:serif;">
+								<tbody>
+									<tr>
+										<td rowspan="3" height="61" class="xl72" width="98" align="center">
+											<B>Program</B>
+										</td>
+										<td rowspan="3" class="xl72" width="200" align="center">
+											<B>Raw_Data</B>
+										</td>
+										<td rowspan="3" class="xl72" width="120" align="center">
+											<B>Vulnerability</B>
+										</td>
+										<td colspan="12" class="xl72" width="1068" align="center">
+											<B>Unique Crashes</B>
+										</td>
+										<td colspan="10" class="xl73" width="666" align="center">
+											<B>Statistical Test</B>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" height="20" class="xl72" align="center">
+											<B>MemLock</B>
+										</td>
+										<td colspan="2" class="xl72" align="center">
+											<B>AFL</B>
+										</td>
+										<td colspan="2" class="xl72" align="center">
+											<B>AFLfast</B>
+										</td>
+										<td colspan="2" class="xl72" align="center">
+											<B>PerfFuzz</B>
+										</td>
+										<td colspan="2" class="xl72" align="center">
+											<B>fairFuzz</B>
+										</td>
+										<td colspan="2" class="xl72" align="center">
+											<B>QSYM</B>
+										</td>
+										<td colspan="2" class="xl77" align="center">
+											<B>AFL</B>
+										</td>
+										<td colspan="2" class="xl77" align="center">
+											<B>AFLfast</B>
+										</td>
+										<td colspan="2" class="xl77" align="center">
+											<B>PerfFuzz</B>
+										</td>
+										<td colspan="2" class="xl77" align="center">
+											<B>FairFuzz</B>
+										</td>
+										<td colspan="2" class="xl77" align="center">
+											<B>QSYM</B>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center">
+											Other
+										</td>
+										<td class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center">
+											Other
+										</td>
+										<td class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center">
+											Other
+										</td>
+										<td class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center">
+											Other
+										</td>
+										<td class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center">
+											Other
+										</td>
+										<td class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center"> 
+											Other
+										</td>
+										<td class="xl77" align="center">
+											<B>p-value</B>
+										</td>
+										<td class="xl77" align="center">
+											<B>A<sub>12</sub></B>
+										</td>
+										<td class="xl77" align="center">
+											<B>p-value</B>
+										</td>
+										<td class="xl77" align="center">
+											<B>A<sub>12</sub></B>
+										</td>
+										<td class="xl77" align="center">
+											<B>p-value</B>
+										</td>
+										<td class="xl77" align="center">
+											<B>A<sub>12</sub></B>
+										</td>
+										<td class="xl77" align="center">
+											<B>p-value</B>
+										</td>
+										<td class="xl77" align="center">
+											<B>A<sub>12</sub></B>
+										</td>
+										<td class="xl77" align="center">
+											<B>p-value</B>
+										</td>
+										<td class="xl77" align="center">
+											<B>A<sub>12</sub></B>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											mjs
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EQoqWduM1ItOq7g8XR_ca5sBloRFNhxkAH8kHoSyrPxbvg?e=8E0qfc">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<B><font color="red">114</font></B>
+										</td>
+										<td class="xl69" align="right">
+											16
+										</td>
+										<td class="xl71" align="right">
+											<B>36</B>
+										</td>
+										<td class="xl69" align="right">
+											184
+										</td>
+										<td class="xl69" align="right">
+											<B>31</B>
+										</td>
+										<td class="xl69" align="right">
+											172
+										</td>
+										<td class="xl71" align="right">
+											<B>88</B>
+										</td>
+										<td class="xl69" align="right">
+											106
+										</td>
+										<td class="xl69" align="right">
+											<B>12</B>
+										</td>
+										<td class="xl69" align="right">
+											219
+										</td>
+										<td class="xl69" align="right">
+											<B>30</B>
+										</td>
+										<td class="xl69" align="right">
+											181
+										</td>
+										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0204
+										</td>
+										<td class="xl80" align="right">
+											0.96
+										</td>
+										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											cxxfilt
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EV2N1gHarvBKuWzexexU_yABZmW1lX8B3NiRu4Pu9HlCHA?e=dxu3dO">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<B><font color="red">448</font></B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>373</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>304</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>401</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>39</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>327</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0561
+										</td>
+										<td class="xl80" align="right">
+											0.88
+										</td>
+										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											nm
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EZd3-KI3m6lGqSASyG1Nip4B1aCu6Y5SAnhVQ-EeyPKV3w?e=1LSsyk">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>127</B></font>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>12</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>21</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>17</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>20</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											nasm
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/Ealnx0N5SSpGjbx20kJxVcEBnAcq15gT9x6qYfg-yfOUCg?e=usIl47">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>132</B></font>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>6</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>4</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>40</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>4</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											flex
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EexnQ3sXgGtFov5t7Dc6SQQB1TEn2cV7DLt3PK1z6ttUyw?e=pUrK9M">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>61</B></font>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											yaml-cpp
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EaLbx1MMyi5Dh6JGr7FI8bkBSW5Nfu8wU_U9TIW4T38Vjw?e=LEr8uH">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>4</B></font>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>1</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>3</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.4404
+										</td>
+										<td class="xl78" align="right">
+											0.56
+										</td>
+										<td class="xl66" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											libsass
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EZ-RIiZuYsJInJD3MCW4fUwBMTwPmuM6V-yls_kso5ut8w?e=101Hsz">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>23</B></font>
+										</td>
+										<td class="xl69" align="right">
+											49
+										</td>
+										<td class="xl71" align="right">
+											<B>6</B>
+										</td>
+										<td class="xl69" align="right">
+											39
+										</td>
+										<td class="xl69" align="right">
+											<B>4</B>
+										</td>
+										<td class="xl69" align="right">
+											41
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>23</B></font>
+										</td>
+										<td class="xl69" align="right">
+											73
+										</td>
+										<td class="xl69" align="right">
+											<B>11</B>
+										</td>
+										<td class="xl69" align="right">
+											44
+										</td>
+										<td class="xl69" align="right">
+											<B>7</B>
+										</td>
+										<td class="xl69" align="right">
+											33
+										</td>
+										<td class="xl79" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.5000
+										</td>
+										<td class="xl78" align="right">
+											0.53
+										</td>
+										<td class="xl66" align="right">
+											0.0551
+										</td>
+										<td class="xl66" align="right">
+											0.88
+										</td>
+										<td class="xl79" align="right">
+											0.0142
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											yara
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/ET3DlJzefwZIm4qm1O9tr3EBp1msVot4XAKMzN2g7ZUfKA?e=AtUJ36">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl71" align="right">
+											<font color="red"><B>156</B></font>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>34</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>33</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl71" align="right">
+											<B>65</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>13</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>31</B>
+										</td>
+										<td class="xl69" align="right">
+											1
+										</td>
+										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0303
+										</td>
+										<td class="xl80" align="right">
+											0.94
+										</td>
+										<td class="xl66" align="right">
+											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											readelf
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EUasmcabwJJKsRkWOqJezZIBD1xigNNakYrrYxZdDWDzgQ?e=Hhdvhw">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red"><B>273</B></font>
+										</td>
+										<td class="xl66" align="right">
+											0
+										</td>
+										<td class="xl66" align="right">
+											<B>104</B>
+										</td>
+										<td class="xl66" align="right">
+											0
+										</td>
+										<td class="xl66" align="right">
+											<B>110</B>
+										</td>
+										<td class="xl66" align="right">
+											0
+										</td>
+										<td class="xl66" align="right">
+											<B>54</B>
+										</td>
+										<td class="xl66" align="right">
+											0
+										</td>
+										<td class="xl66" align="right">
+											<B>181</B>
+										</td>
+										<td class="xl66" align="right">
+											0
+										</td>
+										<td class="xl66" align="right">
+											<B>114</B>
+										</td>
+										<td class="xl66" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0301
+										</td>
+										<td class="xl65" align="right">
+											0.88
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											exiv2
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EVksvGbSrFBAoUQnup-ClAUBFmMCYHq8b_LoTxUu3a9xxQ?e=ph6weE">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<B>10</B>
+										</td>
+										<td class="xl66" align="right">
+											5
+										</td>
+										<td class="xl66" align="right">
+											<B>11</B>
+										</td>
+										<td class="xl66" align="right">
+											8
+										</td>
+										<td class="xl66" align="right">
+											<B>11</B>
+										</td>
+										<td class="xl66" align="right">
+											8
+										</td>
+										<td class="xl66" align="right">
+											<B>6</B>
+										</td>
+										<td class="xl66" align="right">
+											9
+										</td>
+										<td class="xl66" align="right">
+											<font color="red"><B>15</B></font>
+										</td>
+										<td class="xl66" align="right">
+											6
+										</td>
+										<td class="xl66" align="right">
+											<B>8</B>
+										</td>
+										<td class="xl66" align="right">
+											14
+										</td>
+										<td class="xl79" align="right">
+											0.0352
+										</td>
+										<td class="xl80" align="right">
+											0.14
+										</td>
+										<td class="xl66" align="right">
+											0.0675
+										</td>
+										<td class="xl78" align="right">
+											0.20
+										</td>
+										<td class="xl79" align="right">
+											0.0226
+										</td>
+										<td class="xl80" align="right">
+											0.90
+										</td>
+										<td class="xl66" align="right">
+											0.0058
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.5000
+										</td>
+										<td class="xl66" align="right">
+											0.52
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											openjpeg
+										</td>
+										<td class="xl66">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/EYoaKr7cQFtEpN51Aem58_oBn5oMqD3uWkCBl_tGSI_Qbw?e=wGuVCL">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>16</B></font>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>8</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>5</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>7</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>5</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0694
+										</td>
+										<td class="xl78" align="right">
+											0.80
+										</td>
+										<td class="xl66" align="right">
+											0.0058
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0036
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.4569
+										</td>
+										<td class="xl66" align="right">
+											0.46
+										</td>
+										<td class="xl79" align="right">
+											0.0706
+										</td>
+										<td class="xl78" align="right">
+											0.80
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl74">
+											bento4
+										</td>
+										<td rowspan="2" class="xl74">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/Ee9gbzHF0WlMv84WkImDQzYBnpXmrOIP6jFChliUY-rbIA?e=5vCKQt">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>5</B></font>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											1
+										</td>
+										<td class="xl69" align="right">
+											<B>2</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											2
+										</td>
+										<td class="xl69" align="right">
+											<B>2</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>2</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>1</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											1
+										</td>
+										<td class="xl69" align="right">
+											<B>1</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											1
+										</td>
+										<td class="xl79" align="right">
+											0.0014
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0063
+										</td>
+										<td class="xl80" align="right">
+											0.98
+										</td>
+										<td class="xl79" align="right">
+											0.0036
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0047
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0036
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl70">
+											memory leak
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>145</B></font>
+										</td>
+										<td class="xl69" align="right">
+											78
+										</td>
+										<td class="xl69" align="right">
+											<B>72</B>
+										</td>
+										<td class="xl69" align="right">
+											61
+										</td>
+										<td class="xl69" align="right">
+											<B>125</B>
+										</td>
+										<td class="xl69" align="right">
+											74
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0056
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0056
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl74" align="right">
+											libming
+										</td>
+										<td rowspan="2" class="xl74">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/Ed-gVc8HF-9FubyAKIyvDj8BN_kCQPpgpyvaWU-jvjPm_w?e=EnxYCt">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl69" align="right">
+											<B>18</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>20</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>18</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>17</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>20</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
+											<B>16</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0651
+										</td>
+										<td class="xl78" align="right">
+											0.20
+										</td>
+										<td class="xl66" align="right">
+											0.3342
+										</td>
+										<td class="xl78" align="right">
+											0.60
+										</td>
+										<td class="xl79" align="right">
+											0.2926
+										</td>
+										<td class="xl78" align="right">
+											0.62
+										</td>
+										<td class="xl66" align="right">
+											0.0116
+										</td>
+										<td class="xl80" align="right">
+											0.20
+										</td>
+										<td class="xl79" align="right">
+											0.0626
+										</td>
+										<td class="xl78" align="right">
+											0.80
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl70">
+											memory leak
+										</td>
+										<td class="xl69" align="right">
+											<B>264</B>
+										</td>
+										<td class="xl69" align="right">
+											<B>336</B>
+										</td>
+										<td class="xl69" align="right">
+											<B>324</B>
+										</td>
+										<td class="xl69" align="right">
+											<B>324</B>
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>371</B></font>
+										</td>
+										<td class="xl69" align="right">
+											<B>354</B>
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl74">
+											jasper
+										</td>
+										<td rowspan="2" class="xl74">
+											<img src="Html/images/OneDrive_24px.png" width="50%"><a href="https://entuedu-my.sharepoint.com/:u:/g/personal/n1705695h_e_ntu_edu_sg/ETzV0icD9jNHpXi91xrl2s0B2ERsCPrWeGTPp6dfbt2HBw?e=NDz2Sp">Download</a>
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>3</B></font>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											6
+										</td>
+										<td class="xl69" align="right">
+											<B>2</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											6
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>3</B></font>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											7
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											1
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>3</B></font>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											6
+										</td>
+										<td class="xl69" align="right">
+											<B>2</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											6
+										</td>
+										<td class="xl79" align="right">
+											0.0279
+										</td>
+										<td class="xl80" align="right">
+											0.84
+										</td>
+										<td class="xl66" align="right">
+											0.4102
+										</td>
+										<td class="xl78" align="right">
+											0.56
+										</td>
+										<td class="xl79" align="right">
+											0.0037
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.4106
+										</td>
+										<td class="xl66" align="right">
+											0.56
+										</td>
+										<td class="xl79" align="right">
+											0.0124
+										</td>
+										<td class="xl65" align="right">
+											0.92
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl70">
+											memory leak
+										</td>
+										<td class="xl69" align="right">
+											<B>210</B>
+										</td>
+										<td class="xl69" align="right">
+											<B>234</B>
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>235</B></font>
+										</td>
+										<td class="xl69" align="right">
+											<B>35</B>
+										</td>
+										<td class="xl69" align="right">
+											<B>216</B>
+										</td>
+										<td class="xl69" align="right">
+											<B>212</B>
+										</td>
+										<td class="xl79" align="right">
+											0.0177
+										</td>
+										<td class="xl80" align="right">
+											0.08
+										</td>
+										<td class="xl79" align="right">
+											0.0177
+										</td>
+										<td class="xl80" align="right">
+											0.08
+										</td>
+										<td class="xl79" align="right">
+											0.0059
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
+											0.3381
+										</td>
+										<td class="xl78" align="right">
+											0.40
+										</td>
+										<td class="xl79" align="right">
+											0.4583
+										</td>
+										<td class="xl66" align="right">
+											0.46
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" height="21" class="xl81">
+											<B>Total Number of Unique Crashes</B>
+										</td>
+										<td class="xl75" align="right">
+											<font color="red"><B>2009</B></font>
+										</td>
+										<td class="xl75" align="right">
+											77
+										</td>
+										<td class="xl75" align="right">
+											<B>1262</B>
+										</td>
+										<td class="xl75" align="right">
+											239
+										</td>
+										<td class="xl75" align="right">
+											<B>1178</B>
+										</td>
+										<td class="xl75" align="right">
+											228
+										</td>
+										<td class="xl75" align="right">
+											<B>1136</B>
+										</td>
+										<td class="xl75" align="right">
+											189
+										</td>
+										<td class="xl75" align="right">
+											<B>1014</B>
+										</td>
+										<td class="xl75" align="right">
+											276
+										</td>
+										<td class="xl75" align="right">
+											<B>1205</B>
+										</td>
+										<td class="xl75" align="right">
+											236
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" height="21" class="xl81">
+											<B>Improvement</B>
+										</td>
+										<td class="xl76" align="right">
+											<font color="blue"><B>-</B></font>
+										</td>
+										<td class="xl76" align="right">
+										</td>
+										<td class="xl76" align="right">
+											<font color="blue"><B>+59.19%</B></font>
+										</td>
+										<td class="xl76" align="right">
+										</td>
+										<td class="xl76">
+											<font color="blue"><B>+70.54%</B></font>
+										</td>
+										<td class="xl76" align="right">
+										</td>
+										<td class="xl76" align="right">
+											<font color="blue"><B>+76.85%</B></font>
+										</td>
+										<td class="xl76" align="right">
+										</td>
+										<td class="xl76" align="right">
+											<font color="blue"><B>+98.13%</B></font>
+										</td>
+										<td class="xl76">
+										</td>
+										<td class="xl76" align="right">
+											<font color="blue"><B>+66.72%</B></font>
+										</td>
+										<td class="xl76" align="right">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							</div>
+							<br/>
+						</div>
+						<div class="clearfix"></div>
+						<div align="left">
+							<p><br></p>
+							<p style="text-indent:2em"><font color="black" size="3">To better compare different fuzzers, we also use the plots to depict the performance over time in some benchmark programs, as shown in Figure below. It shows that MemLock has a steady and strong growth trend in finding unique crashes, and MemLock is also the first fuzzer that reported crashes.</font></p>
+							<p><br></p>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/nm.png">
+							</figure>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/nasm.png">
+							</figure>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/readelf.png">
+							</figure>
+						</div>
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/openjpeg.png">
+							</figure>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/yaml-cpp.png">
+							</figure>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/yara.png">
+							</figure>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/flex.png">
+							</figure>
+						</div>
+
+						<div class="col-md-3 portfolio-grids">
+							<figure>
+								<img width="100%" height="100%" src="Html/images/Crash/mp42hls.png">
+							</figure>
+						</div>
+						<div class="clearfix"></div>
+						<p><br></p>
+						<p><br></p>
+
+
+						<div class="col-md-12">
+							<h3>Vulnerabilities Discovery</h3>
+							<div align="left">
+								<p><br></p>
+								<p style="text-indent:2em"><font color="black" size="3">Although there is a weak correlation between the number of unique crashes and the number of vulnerabilities found during the fuzzing process. A more important measurement is the capability to find real-world vulnerabilities, as suggested by Klees. Thus, we compare the capability of MemLock to find unique vulnerabilities against baseline fuzzers in this section.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">The table below shows the statistic results in 6 different state-of-the-art fuzzers. The benchmark programs totally contain 35 vulnerabilities, out of which MemLock performs best in the 27 vulnerabilities among 6 state-of-the-art fuzzers, as shown in column <I>MemLock</I>. MemLock averagely takes about 5.4 hours to find each unique vulnerability, which is 2.15, 2.15, 2.20, 2.69, 2.07 times faster than the state-of-the-art fuzzers AFL, AFlfast, PerfFuzz, FairFuzz, and QSYM respectively. In particular, \toolname find 34 out of 35 unique vulnerabilities within 24 hours, while other fuzzers AFL, AFLfast, PerfFuzz, FairFuzz and QSYM only find 26, 28, 20, 17 and 25, respectively. The four unique vulnerabilities (i.e., issue#106, CVE-2018-18701, CVE-2019-6293 and CVE-2019-7698) in <I>mjs</I>, <I>nm</I>, <I>flex</I>, and <I>bento4</I> can  found by only \toolname within 24 hours. Therefore, it is proved that our memory-consumption guided strategy is very effective to find memory consumption-related bugs.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">In addition, we also conduct the statistic test for real-world vulnerability evaluation. Out of 170 A<sub>12</sub> values in the table, 111 (65.3%) A<sub>12</sub> values are bold and exceeding the conventionally large effect size (0.71). Thus, MemLock significantly outperforms other 5 state-of-the-art fuzzers in finding unique vulnerabilities.</font></p>
+								<p><br></p>
+							</div>
+							<div class="clearfix"></div>
+							<p><br></p>
+							<div class="table-container-outer">
+							<div class="table-container">
+							<table border="1" cellpadding="5px" cellspacing="0px" class="ke-zeroborder" style="font-size:11px;font-family:serif;">
+								<tbody>
+									<tr>
+										<td rowspan="2" height="42" class="xl80" width="129" align="center">
+											<B>Program</B>
+										</td>
+										<td rowspan="2" class="xl80" width="253" align="center">
+											<B>Vulnerability</B>
+										</td>
+										<td rowspan="2" class="xl80" width="235" align="center">
+											<B>Type</B>
+										</td>
+										<td colspan="6" class="xl72" width="384" align="center">
+											<B>Exposing Time (hours)</B>
+										</td>
+										<td colspan="10" class="xl76" width="640" align="center">
+											<B>Statistical Test (p-value &amp; A<sub>12</sub>)</B>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl72" align="center">
+											<B>MemLock</B>
+										</td>
+										<td class="xl72" align="center">
+											<B>AFL</B>
+										</td>
+										<td class="xl72" align="center">
+											<B>AFLfast</B>
+										</td>
+										<td class="xl72" align="center">
+											<B>PerfFuzz</B>
+										</td>
+										<td class="xl72" align="center">
+											<B>FairFuzz</B>
+										</td>
+										<td class="xl72" align="center">
+											<B>QSYM</B>
+										</td>
+										<td colspan="2" class="xl82" align="center">
+											<B>AFL</B>
+										</td>
+										<td colspan="2" class="xl76" align="center">
+											<B>AFLfast<B>
+										</td>
+										<td colspan="2" class="xl76" align="center">
+											<B>PerfFuzz</B>
+										</td>
+										<td colspan="2" class="xl76" align="center">
+											<B>FairFuzz</B>
+										</td>
+										<td colspan="2" class="xl76" align="center">
+											<B>QSYM</B>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl73">
+											mjs
+										</td>
+										<td class="xl66">
+											issue#58
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											0.5
+										</td>
+										<td class="xl69" align="right">
+											0.3
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">0.2</font>
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											0.3
+										</td>
+										<td class="xl68" align="right">
+											0.1169
+										</td>
+										<td class="xl71" align="right">
+											0.25
+										</td>
+										<td class="xl68" align="right">
+											0.1561
+										</td>
+										<td class="xl71" align="right">
+											0.25
+										</td>
+										<td class="xl68" align="right">
+											0.0344
+										</td>
+										<td class="xl79" align="right">
+											0.13
+										</td>
+										<td class="xl68" align="right">
+											0.1547
+										</td>
+										<td class="xl71" align="right">
+											0.25
+										</td>
+										<td class="xl68" align="right">
+											0.1168
+										</td>
+										<td class="xl71" align="right">
+											0.22
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											issue#106
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">13.7</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="5" height="105" class="xl73">
+											cxxfilt
+										</td>
+										<td class="xl66">
+											CVE-2018-9138
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">0.3</font>
+										</td>
+										<td class="xl69" align="right">
+											7.2
+										</td>
+										<td class="xl69" align="right">
+											10.1
+										</td>
+										<td class="xl66" align="right">
+											0.5
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											3.3
+										</td>
+										<td class="xl68" align="right">
+											0.0147
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0147
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0902
+										</td>
+										<td class="xl79" align="right">
+											0.81
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0147
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-9996
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">16.5</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											0.00
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-17985
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.2</font>
+										</td>
+										<td class="xl66" align="right">
+											1.1
+										</td>
+										<td class="xl69" align="right">
+											4.5
+										</td>
+										<td class="xl69" align="right">
+											0.2
+										</td>
+										<td class="xl69" align="right">
+											1.9
+										</td>
+										<td class="xl66" align="right">
+											1.4
+										</td>
+										<td class="xl68" align="right">
+											0.0089
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.2266
+										</td>
+										<td class="xl71" align="right">
+											0.63
+										</td>
+										<td class="xl68" align="right">
+											0.0127
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-18484
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.2</font>
+										</td>
+										<td class="xl66" align="right">
+											1
+										</td>
+										<td class="xl69" align="right">
+											4.5
+										</td>
+										<td class="xl69" align="right">
+											0.2
+										</td>
+										<td class="xl69" align="right">
+											8
+										</td>
+										<td class="xl66" align="right">
+											1.4
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.2266
+										</td>
+										<td class="xl71" align="right">
+											0.63
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-18700
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.2</font>
+										</td>
+										<td class="xl66" align="right">
+											1.2
+										</td>
+										<td class="xl69" align="right">
+											4.6
+										</td>
+										<td class="xl66" align="right">
+											0.3
+										</td>
+										<td class="xl69" align="right">
+											12.6
+										</td>
+										<td class="xl66" align="right">
+											1.4
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0929
+										</td>
+										<td class="xl79" align="right">
+											0.75
+										</td>
+										<td align="right" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="7" height="147" class="xl73">
+											nm
+										</td>
+										<td class="xl66">
+											CVE-2018-12641
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">2.6</font>
+										</td>
+										<td class="xl66" align="right">
+											19.1
+										</td>
+										<td class="xl69" align="right">
+											12.6
+										</td>
+										<td class="xl66" align="right">
+											12.2
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											12.8
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0151
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0561
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0331
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-17985
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">10.4</font>
+										</td>
+										<td class="xl66" align="right">
+											18.2
+										</td>
+										<td class="xl69" align="right">
+											11.9
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											13.3
+										</td>
+										<td class="xl68" align="right">
+											0.0281
+										</td>
+										<td class="xl79" align="right">
+											0.81
+										</td>
+										<td class="xl68" align="right">
+											0.4426
+										</td>
+										<td class="xl71" align="right">
+											0.56
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.3315
+										</td>
+										<td class="xl71" align="right">
+											0.63
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-18484
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">9.9</font>
+										</td>
+										<td class="xl66" align="right">
+											16.4
+										</td>
+										<td class="xl69" align="right">
+											17.1
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											14
+										</td>
+										<td class="xl68" align="right">
+											0.0448
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0448
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.4422
+										</td>
+										<td class="xl71" align="right">
+											0.75
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-18700
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">9.6</font>
+										</td>
+										<td class="xl66" align="right">
+											14.9
+										</td>
+										<td class="xl69" align="right">
+											17.8
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.3315
+										</td>
+										<td class="xl71" align="right">
+											0.63
+										</td>
+										<td class="xl68" align="right">
+											0.0461
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-18701
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">13.9</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2019-9070
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											18.4
+										</td>
+										<td class="xl66" align="right">
+											15.6
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">13.9</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											15.8
+										</td>
+										<td class="xl68" align="right">
+											0.4419
+										</td>
+										<td class="xl71" align="right">
+											0.56
+										</td>
+										<td class="xl68" align="right">
+											0.4419
+										</td>
+										<td class="xl71" align="right">
+											0.44
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.4419
+										</td>
+										<td class="xl71" align="right">
+											0.56
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2019-9071
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">12.4</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											14
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0344
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.2352
+										</td>
+										<td class="xl71" align="right">
+											0.69
+										</td>
+										<td class="xl68" align="right">
+											0.0344
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0344
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0344
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl73">
+											nasm
+										</td>
+										<td class="xl66">
+											CVE-2019-6290, (CVE-2018-1000886)
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.9</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											19
+										</td>
+										<td class="xl69" align="right">
+											9
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											17.6
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0147
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2019-6291
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">1.5</font>
+										</td>
+										<td class="xl66" align="right">
+											9
+										</td>
+										<td class="xl66" align="right">
+											14
+										</td>
+										<td class="xl69" align="right">
+											8.7
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											7.5
+										</td>
+										<td class="xl68" align="right">
+											0.0303
+										</td>
+										<td class="xl79" align="right">
+											0.94
+										</td>
+										<td class="xl68" align="right">
+											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											flex
+										</td>
+										<td class="xl66">
+											CVE-2019-6293
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">5.4</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0036
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0036
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0036
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0036
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0036
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl73">
+											prase
+										</td>
+										<td class="xl66">
+											CVE-2019-6292, (CVE-2019-6285)
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.4</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											18.4
+										</td>
+										<td class="xl69" align="right">
+											0.9
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0127
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0956
+										</td>
+										<td class="xl79" align="right">
+											0.81
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-20573, (CVE-2018-20574)
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">6.1</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											12.4
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0334
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0334
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0843
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0334
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0334
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="3" height="63" class="xl73">
+											sassc
+										</td>
+										<td class="xl66">
+											CVE-2018-19837
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">1.6</font>
+										</td>
+										<td class="xl66" align="right">
+											13.3
+										</td>
+										<td class="xl66" align="right">
+											10.5
+										</td>
+										<td class="xl66" align="right">
+											1.8
+										</td>
+										<td class="xl66" align="right">
+											8.5
+										</td>
+										<td class="xl66" align="right">
+											5
+										</td>
+										<td class="xl68" align="right">
+											0.0451
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0461
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.3325
+										</td>
+										<td class="xl71" align="right">
+											0.63
+										</td>
+										<td class="xl68" align="right">
+											0.0461
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0769
+										</td>
+										<td class="xl79" align="right">
+											0.81
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-20821
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">0.1</font>
+										</td>
+										<td class="xl66" align="right">
+											5.7
+										</td>
+										<td class="xl66" align="right">
+											6.5
+										</td>
+										<td class="xl69" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											9.5
+										</td>
+										<td class="xl66" align="right">
+											7.4
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2018-20822
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl66" align="right">
+											15.6
+										</td>
+										<td class="xl66" align="right">
+											14.3
+										</td>
+										<td class="xl66" align="right">
+											19.5
+										</td>
+										<td class="xl69" align="right">
+											14.6
+										</td>
+										<td class="xl66" align="right">
+											11.3
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">10.5</font>
+										</td>
+										<td class="xl68" align="right">
+											0.4388
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											0.4388
+										</td>
+										<td class="xl71" align="right">
+											0.56
+										</td>
+										<td class="xl78" align="right">
+											0.5000
+										</td>
+										<td class="xl71" align="right">
+											0.47
+										</td>
+										<td class="xl68" align="right">
+											0.4388
+										</td>
+										<td class="xl71" align="right">
+											0.56
+										</td>
+										<td class="xl68" align="right">
+											0.4408
+										</td>
+										<td class="xl71" align="right">
+											0.44
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl73">
+											yara
+										</td>
+										<td class="xl66">
+											CVE-2017-9438, (CVE-2017-9304)
+										</td>
+										<td class="xl70">
+											uncontrolled-recursion
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.2</font>
+										</td>
+										<td class="xl66" align="right">
+											0.9
+										</td>
+										<td class="xl66" align="right">
+											0.61
+										</td>
+										<td class="xl69" align="right">
+											4.3
+										</td>
+										<td class="xl66" align="right">
+											5.3
+										</td>
+										<td class="xl66" align="right">
+											0.8
+										</td>
+										<td class="xl68" align="right">
+											0.0128
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0325
+										</td>
+										<td class="xl79" align="right">
+											0.91
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl67">
+											readelf
+										</td>
+										<td class="xl66">
+											CVE-2017-15996
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">0.2</font>
+										</td>
+										<td class="xl66" align="right">
+											0.3
+										</td>
+										<td class="xl66" align="right">
+											0.2
+										</td>
+										<td class="xl66" align="right">
+											0.5
+										</td>
+										<td class="xl66" align="right">
+											0.3
+										</td>
+										<td class="xl66" align="right">
+											0.3
+										</td>
+										<td class="xl68" align="right">
+											0.0326
+										</td>
+										<td class="xl79" align="right">
+											0.86
+										</td>
+										<td class="xl68" align="right">
+											0.1821
+										</td>
+										<td class="xl71" align="right">
+											0.68
+										</td>
+										<td class="xl68" align="right">
+											0.0144
+										</td>
+										<td class="xl79" align="right">
+											0.92
+										</td>
+										<td class="xl68" align="right">
+											0.183
+										</td>
+										<td class="xl71" align="right">
+											0.68
+										</td>
+										<td class="xl68" align="right">
+											0.0091
+										</td>
+										<td class="xl79" align="right">
+											0.96
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl67">
+											exiv2
+										</td>
+										<td class="xl66">
+											CVE-2018-4868
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl73">
+											mp42hls
+										</td>
+										<td class="xl66">
+											CVE-2018-20186
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2019-7698, (CVE-2019-6966)
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">14.6</font>
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.019
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="3" height="63" class="xl73">
+											listswf
+										</td>
+										<td class="xl66">
+											CVE-2019-7581, (CVE-2018-7876)
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">0.6</font>
+										</td>
+										<td class="xl66" align="right">
+											0.8
+										</td>
+										<td class="xl66" align="right">
+											1.4
+										</td>
+										<td class="xl66" align="right">
+											2
+										</td>
+										<td class="xl66" align="right">
+											0.4
+										</td>
+										<td class="xl66" align="right">
+											1.6
+										</td>
+										<td class="xl68" align="right">
+											0.2009
+										</td>
+										<td class="xl71" align="right">
+											0.68
+										</td>
+										<td class="xl68" align="right">
+											0.0712
+										</td>
+										<td class="xl79" align="right">
+											0.80
+										</td>
+										<td class="xl68" align="right">
+											0.0296
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.2648
+										</td>
+										<td class="xl71" align="right">
+											0.36
+										</td>
+										<td class="xl68" align="right">
+											0.0712
+										</td>
+										<td class="xl79" align="right">
+											0.80
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2019-7582,
+								(CVE-2018-13251)
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											issue#155
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											1.4
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">1</font>
+										</td>
+										<td class="xl66" align="right">
+											1.3
+										</td>
+										<td class="xl66" align="right">
+											1.4
+										</td>
+										<td class="xl66" align="right">
+											1.2
+										</td>
+										<td class="xl66" align="right">
+											1.6
+										</td>
+										<td class="xl68" align="right">
+											0.1728
+										</td>
+										<td class="xl71" align="right">
+											0.30
+										</td>
+										<td class="xl68" align="right">
+											0.2654
+										</td>
+										<td class="xl71" align="right">
+											0.36
+										</td>
+										<td class="xl68" align="right">
+											0.338
+										</td>
+										<td class="xl71" align="right">
+											0.40
+										</td>
+										<td class="xl68" align="right">
+											0.3766
+										</td>
+										<td class="xl71" align="right">
+											0.42
+										</td>
+										<td class="xl68" align="right">
+											0.2654
+										</td>
+										<td class="xl71" align="right">
+											0.64
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl73">
+											opj_decompress
+										</td>
+										<td class="xl66">
+											CVE-2019-6988
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">7.8</font>
+										</td>
+										<td class="xl66" align="right">
+											15.1
+										</td>
+										<td class="xl66" align="right">
+											11.1
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											15.3
+										</td>
+										<td class="xl68" align="right">
+											0.0326
+										</td>
+										<td class="xl79" align="right">
+											0.86
+										</td>
+										<td class="xl68" align="right">
+											0.0417
+										</td>
+										<td class="xl79" align="right">
+											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0449
+										</td>
+										<td class="xl79" align="right">
+											0.81
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											CVE-2017-12982
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">4.5</font>
+										</td>
+										<td class="xl66" align="right">
+											11.4
+										</td>
+										<td class="xl66" align="right">
+											10
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											11.9
+										</td>
+										<td class="xl66" align="right">
+											10
+										</td>
+										<td class="xl68" align="right">
+											0.0147
+										</td>
+										<td class="xl79" align="right">
+											0.72
+										</td>
+										<td class="xl68" align="right">
+											0.2016
+										</td>
+										<td class="xl71" align="right">
+											0.60
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.2648
+										</td>
+										<td class="xl71" align="right">
+											0.64
+										</td>
+										<td class="xl68" align="right">
+											0.3566
+										</td>
+										<td class="xl71" align="right">
+											0.50
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2" height="42" class="xl73">
+											jasper
+										</td>
+										<td class="xl66">
+											CVE-2016-8886
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">4.1</font>
+										</td>
+										<td class="xl66" align="right">
+											17
+										</td>
+										<td class="xl66" align="right">
+											22.3
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											10.3
+										</td>
+										<td class="xl66" align="right">
+											18.2
+										</td>
+										<td class="xl68" align="right">
+											0.0285
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0059
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl78" align="right">
+											0.5000
+										</td>
+										<td class="xl71" align="right">
+											0.52
+										</td>
+										<td class="xl68" align="right">
+											0.0296
+										</td>
+										<td class="xl79" align="right">
+											0.88
+										</td>
+									</tr>
+									<tr>
+										<td height="21" class="xl66">
+											issue#207
+										</td>
+										<td class="xl70">
+											uncontrolled-memory-allocation
+										</td>
+										<td class="xl66" align="right">
+											<font color="red">1.7</font>
+										</td>
+										<td class="xl66" align="right">
+											2.2
+										</td>
+										<td class="xl66" align="right">
+											3.6
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
+											2.2
+										</td>
+										<td class="xl66" align="right">
+											4
+										</td>
+										<td class="xl68" align="right">
+											0.338
+										</td>
+										<td class="xl71" align="right">
+											0.62
+										</td>
+										<td class="xl68" align="right">
+											0.5
+										</td>
+										<td class="xl71" align="right">
+											0.68
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.4582
+										</td>
+										<td class="xl71" align="right">
+											0.68
+										</td>
+										<td class="xl68" align="right">
+											0.2654
+										</td>
+										<td class="xl71" align="right">
+											0.64
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" height="21" class="xl82" align="left">
+											<B>umber of vulnerabilities revealed</B>
+										</td>
+										<td class="xl65" align="right">
+											<font color="red"><B>34</B></font>
+										</td>
+										<td class="xl65" align="right">
+											26
+										</td>
+										<td class="xl65" align="right">
+											28
+										</td>
+										<td class="xl65" align="right">
+											20
+										</td>
+										<td class="xl65" align="right">
+											17
+										</td>
+										<td class="xl65" align="right">
+											25
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" height="21" class="xl82" align="left">
+											<B>Detectability Improvement</B>
+										</td>
+										<td class="xl74" align="right">
+											<font color="blue">-</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">+30.77%</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">+21.43%</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">+70.00%</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">+100.00%</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">+36.00%</font>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" height="21" class="xl82" align="left">
+											<B>Average Time Use</B>
+										</td>
+										<td class="xl74" align="right">
+											<font color="red"><B>5.4</B></font>
+										</td>
+										<td class="xl74" align="right">
+											11.6
+										</td>
+										<td class="xl74" align="right">
+											11.6
+										</td>
+										<td class="xl74" align="right">
+											11.9
+										</td>
+										<td class="xl74" align="right">
+											14.5
+										</td>
+										<td class="xl74" align="right">
+											11.2
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" height="21" class="xl82" align="left">
+											<B>Time Improvement</B>
+										</td>
+										<td class="xl74" align="right">
+											<font color="blue">-</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">2.15X</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">2.15X</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">2.20X</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">2.69X</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">2.07X</font>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<p><br></p>
+						<p><br></p>
+
+						<div class="col-md-12">
+							<h3>Memory Leakage</h3>
+							<div align="left">
+								<p><br></p>
+								<p style="text-indent:2em"><font color="black" size="3">Memory leak bugs are a little different from uncontrolled-recursion and uncontrolled-memory-allocation bugs, because they may not lead to program crashes immediately. Only enough memory is leaked, it would produce Denial-of-Service (DoS) attack, for example, in a long time running programs (e.g., banking service). To evaluate the effectiveness of fuzzers in finding memory leak, we look into the number of total bytes leaked within 24 hours during 6 different state-of-the-art fuzzers.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">The table shows the number of total bytes leaked for each fuzzer on different programs. We can see that \toolname shows an obvious advantage over other baseline fuzzers. The number of bytes leaked is improved by from 257% to 49633%, compared to other baseline fuzzers. This is because MemLock tries to maximize each allocation and generates inputs with high memory consumption. When the memory leak happens, those memory-consuming inputs will often cause more-bytes memory leakage. In particular, after manual analysis, we have found that the total leak size of AFL depends too much on the choice of the initial seeds. It lacks the capability of breaking through the limitation caused by the initial seed inputs.</font></p>
+								<p><br></p>
+							</div>
+							<div class="clearfix"></div>
+							<p><br></p>
+							
+							<div class="col-md-12">
+								<figure>
+									<img width="50%" src="Html/images/Leakage.png">
+								</figure>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//result -->
+
+	<!--seed -->
+	<div class="work" id="seed">
+		<div class="container">
+			<h3 class="title">Quality of seeds on Memory Consumption</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="left">
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<div class="col-md-12">
+							<p style="text-indent:2em"><font color="black" size="3">Since MemLock seeks to generate test inputs that consume more and more memory. In this experiment, we evaluate the test input distribution according to memory consumption for each fuzzer we have tested. A fuzzer that maintains a seed pool with a larger proportion of high memory consumption inputs is considered to have a better chance of detecting memory consumption-related bugs.</a></font></p>
+							<p style="text-indent:2em"><font color="black" size="3">The figure shows the input distribution based on memory consumption. In general, we can clearly see that MemLock can generate more seeds with higher memory consumption. This is because the guidance mechanisms in ExMen help to gradually add more and more memory consuming inputs into the seed pool. In particular, for the uncontrolled-recursion bugs (<I>nm</I>, <I>nasm</I>, <I>flex</I> and <I>yara</I>), MemLock generates a large number of inputs that hold more than 30,000 function calls in the call stack, while PerfFuzz generates only a few and AFL/AFLfast can hardly generate inputs that hold more than 10,000 function calls. The pattern is similar for uncontrolled-memory-allocation bugs (<I>readelf</I>, <I>openjpeg</I>, <I>jasper</I> and <I>libming</I>). MemLock can generate a considerable amount of inputs with high memory consumption while the inputs of the other fuzzers concentrate on the low memory consumption region. The results clearly demonstrate the effectiveness of the strategies of MemLock in generating inputs with high memory consumption.</a></font></p>
+							<div class="clearfix"></div>
+							<p><br></p>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/nm-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/nasm-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/flex-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/yara-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/readelf-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/Openjpeg-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/Jasper-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/listswf-histo-bar-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/nm-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/nasm-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/readelf-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/opj_decompress-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/flex-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/yara-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/jasper-boxplot-1.png">
+								</figure>
+							</div>
+
+							<div class="col-md-3 portfolio-grids">
+								<figure>
+									<img width="100%" height="100%" src="Html/images/Seed/listswf-boxplot-1.png">
+								</figure>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//seed -->
+
+	<!--overhead -->
+	<div class="about" id="overhead">
+			<div class="container">
+				<h3 class="title">Additional Evaluation for Overhead</h3>
+				<div class="contact-row">
+					<div class="col-md-12" align="center">
+						<div align="left">
+							<p style="text-indent:2em"><font color="black" size="3">To determine the runtime overhead caused by the guidance mechanisms and static analysis required for MemLock, we compare the code coverage, the execution speed and regular crashes for each baseline fuzzer.</font></p>
+							<p><br></p>
+						</div>
+						<div class="clearfix"></div>
+						<div class="contact-form">
+							<div class="col-md-12">
+								<h2> <B><a name="perfmem">Coverage Evalutaion<a></B></h2>
+								<div align="left">
+									<p><br></p>
+									<p style="text-indent:2em"><font color="black" size="3">The result of our coverage measurements is shown in the Figure. All we can see, in most of the cases, AFL consistently outperforms MemLock, but the size of the effect varies substantially between target applications. For instance, on <I>nasm</I> and <I>readelf</I>, MemLock and AFL perform similarly well after several hours. But on <I>nm</I> and <I>jasper</I>, AFL covers more edges than MemLock. Our result shows that the coverage of MemLock is still comparable.</font></p>
+									<p><br></p>
+								</div>
+								<div class="clearfix"></div>
+								<p><br></p>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/cxxfilt.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/nm.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/nasm.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/flex.png">
+									</figure>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/libsass.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/yaml-cpp.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/bento4.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/readelf.png">
+									</figure>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/exiv2.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/openjpeg.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/libming.png">
+									</figure>
+								</div>
+								<div class="col-md-3 portfolio-grids">
+									<figure>
+										<img width="100%" height="100%" src="Html/images/Coverage/jasper.png">
+									</figure>
+								</div>
+								<div class="clearfix"></div>
+								<p><br></p>
+								<p><br></p>
+							</div>
+
+							<div class="col-md-12">
+								<h2> <B><a name="perfmem">Speed Impact<a></B></h2>
+								<div align="left">
+									<p><br></p>
+									<p style="text-indent:2em"><font color="black" size="3">Since MemLock intentionally keeps seeds that increase memory consumption, we hypothesize that the test execution over time will take longer. The number of executions achieved by MemLock, AFLfast, PerfFuzz, and FairFuzz are shown in the Figure. MemLock can achieve between 20% and 84% of the executions achieved by AFL, while PerfFuzz can achieve between 9% and 78%. Intuition is that PerfFuzz would much slow down the execution speed, as it is a dedicated fuzzer for maximizes the number of instructions executed. But another interesting observation is that increasing the consumed memory could also much slow down the execution speed. For instance, the execution speed of MemLock is lower than PerfFuzz in <I>exiv2</I> and <I>listswf</I>. This indicates that memory consumption is related not only to the space issue, but also to the time issue.</font></p>
+									<p><br></p>
+								</div>
+								<div class="clearfix"></div>
+								<p><br></p>
+								<div class="col-md-12 portfolio-grids">
+									<figure>
+										<img width="85%" src="Html/images/Executions.png">
+									</figure>
+								</div>
+								<div class="clearfix"></div>
+								<p><br></p>
+								<p><br></p>
+							</div>
+
+
+							<div class="col-md-12">
+								<h2> <B><a name="perfmem">Other types of crashes<a></B></h2>
+								<div align="left">
+									<p><br></p>
+									<p style="text-indent:2em"><font color="black" size="3">As shown in the <I>Other</I> column in the table above, MemLock discover fewer regular crashes than other baseline fuzzers. But our effort is still worth it, as MemLock has a different objective and can expose more memory consumption bugs. As discussed above, the main reason would be the side effect (e.g., coverage, execution speed) caused by our approach. </font></p>
+									<p><br></p>
+								</div>
+								<div class="clearfix"></div>
+								<p><br></p>
+								<p><br></p>
+							</div>
+
+							<div class="col-md-12">
+								<h2> <B><a name="perfmem">Comparation Between Instrumentation and 'perf mem/trace'<a></B></h2>
+								<p><br></p>
+								<div align="left">
+									<p style="text-indent:2em"><font color="black" size="3">As an external command, additional overhead may incur for <I>perf mem </I>’s interaction with the fuzzer. According to our experiments, <I>perf mem</I> would introduce an overhead of <font color="blue">71.3%</font>, <I>perf trace </I> would introduce an overhead of <font color="blue">601%</font> comparing with MemLock's instrumentation.</font></p>
+									<p style="text-indent:2em"><font color="black" size="3">The detail experimental result can be seen in Table 1. We quickly perform each experiment for 12 hours and calculate the average execution speed. Note that we perfrom <I>perf mem </I> with command line <code> afl-fuzz ... -- perf mem -D record /path/to/fuzzed_app [ ... ]</code>, and <I>perf trace </I> with command line <code>afl-fuzz ... -- perf trace --call-graph fp /path/to/fuzzed_app [ ... ]</code>. The average execution speed of the program with MemLock's instrumentation is 680/sec, while the <I>perf trace </I> is 97/sec. </font></p>
+									<div align="center">
+										<img src="Html/images/perfmem.png" width="85%" alt="" />
+									</div>
+									<p><br></p>
+								</div>
+								<div class="clearfix"></div>
+								<p><br></p>
+								<p><br></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//overhead -->
+
+	<!--related -->
+	<div class="work" id="related">
+		<div class="container">
+			<h3 class="title">Fuzzing Related Work</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="left">
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<div class="col-md-12 portfolio-grids">
+							<p style="text-indent:2em"><font color="black" size="3">We have examined 63 recently published papers on fuzz testing located by perusing top-conference proceedings and other quality venues, and studied their appoarch. We made a simple comb and summary. Our investigation of fuzzing can also be seen in the summary: <a href="https://researchreview.github.io/RelatedWork/">https://researchreview.github.io/RelatedWork/</a></font></p>
+							<div class="clearfix"></div>
+							<p><br></p>
+							<div id="tab_1" align="center">
+								<iframe src="https://researchreview.github.io/RelatedWork/"
+										width=95%
+										frameborder="0"
+										scrolling="0"
+								></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//related -->
+
+	<!--CVE-2019-6293 -->
+	<div class="about" id="CVE-2019-6293">
+		<div class="container">
+			<h3 class="title">Case Study: CVE-2019-6293</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="center">
+					<div class="clearfix"></div>
+						<figure>
+							<img width="65%" src="Html/images/case1.jpg">
+						</figure>
+					<div class="clearfix"></div>
+					<p align="center">Vulnerable code in <I>flex/src/nfa.c</I><br><br></p>
+					<div class="clearfix"></div>
+					<div class="contact-form" align="left">
+						<p style="text-indent:2em"><font color="black" size="3">To demonstrate the reason behind MemLock's superiority, we present the case of CVE-2019-6293, where can found by only MemLock in our experiments. It is an uncontrolled-recursion vulnerability in <I>flex</I>, which is a lexical analyzer generator. This CVE is triggered by the <I>mark_beginning_as_normal</I> function making recursive calls to itself in certain scenarios involving lots of '*' characters, resulting in stack-overflow. We can directly look at the snippet code of <I>nfa.c</I>, as shown in the Figure. Intuitively, in some cases, function <I>mark_beginning_as_normal</I> shows the behavior of recursive calls. </font></p>
+						<p style="text-indent:2em"><font color="black" size="3">As a brief explanation, This function mark each "beginning" state in a machine as being a "normal" states, and the "beginning" states are the epsilon closure of the first state. <I>transchar</I> represents the transition character of NFA state, <I>trans1</I> is the state that NFA state arrives after accepting <I>tranchar</I>, and <I>trans2</I> is the state of NFA reachable through epsilon. To make this function call to itself, firstly, the input should be valid and can success to reach <I>mark_beginning_as_normal</I> function at line 3. Second, the execution should get into the true branch of the <I>if</I> condition on line 10. Third, to reach line 15, this requires the current state to reach another state through epsilon. To satisfy these three requirements, rules with many '*' characters need to be constructed in the input. AFL discard those input that can make <I>mark_beginning_as_normal</I> functions to call itself multiple times, as those inputs do not increase coverage. We can see the peak length of call stack in the Figure. AFL does not retain any seed over 5000 lengths. Comparing to AFL, MemLock intentionally keeps seeds that increase the peak length of call stack, and finally triggering stack-overflow. This explains the reason why MemLock can found the vulnerability, while other fuzzers can not detect it in all 5 runs.</font></p>
+						<p style="text-indent:2em"><font color="black" size="3">More interestingly, MemLock takes only 5.4 hours on average to discover this vulnerability (CVE-2019-6293), while other fuzzers all fail. We investigate MemLock's mutation history and identify a key mutation step. After a large number of mutation for initial seed, the execution successfully entry the <I>mark_beginning_as_normal</I> function. Once an input causes a recursive call to itself many times, MemLock update such input in Seed Queue. It increases the recursive depth of <I>mark_beginning_as_normal</I> function by adding some '*' characters into the input context, through <I>havoc</I> operation. Usually MemLock retains some seeds from different paths to <I>mark_beginning_as_normal</I> function. MemLock retains a seed for each path that can produce the maximum peak length of call stack. If the <I>splice</I> operation take two inputs with a large number of '*' characters, there is a certain probability that the the peak length of call stack can be doubled instantaneously. After 5 hours, MemLock success in generating inputs that make the peak length of call stack exceed 25000, and finally triggering stack-overflow. </font></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//CVE-2019-6293 -->
+
+	<!--CVE-2018-17985 -->
+	<div class="work" id="CVE-2018-17985">
+		<div class="container">
+			<h3 class="title">Case Study: CVE-2018-17985</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="center">
+					<div class="clearfix"></div>
+						<figure>
+							<img width="65%" src="Html/images/moti1.jpg">
+						</figure>
+					<div class="clearfix"></div>
+					<p align="center">Vulnerable code in <I>cp-demangle.c</I> in <I>Binutils v2.31</I><br><br></p>
+					<div class="clearfix"></div>
+					<div class="contact-form" align="left">
+						<p style="text-indent:2em"><font color="black" size="3">We illustrate the limitations of existing coverage-based grey-box fuzzing techniques for detecting memory consumption bugs with two examples summarized from real-world vulnerabilities. We use the vulnerability CVE-2018-17985 in the Figure to demonstrate a uncontrolled-recursion bug.</font></p>
+						<p style="text-indent:2em"><font color="black" size="3">In the Figure, the function <I>cplus_demangle_type</I> recursively calls itself in line 12 when the input contains the character 'P'. The depth of recursion depends on the number of character 'P's in the input. With a sufficiently large recursive depth, the execution would run out of stack memory, causing stack overflow.	To trigger a stack overflow, the fuzzer would need to generate inputs containing a large number of character 'P's.</font></p>
+						<p style="text-indent:2em"><font color="black" size="3">However, existing coverage-based grey-box fuzzers do not have enough awareness about the change in recursive depth and solely use coverage information to retain interesting inputs. Take AFL as an example, it is aware of repeatedly executed CFG edges but only in a coarse manner. To be specific, AFL adopts the concept of "loop bucket" to retain interesting inputs.	The loop bucket cannot tell the fine-grained change in recursive depth. Specially, it does not differentiate the change when the recursive depth is greater than $255$. Nevertheless, this number is still very far from causing stack exhaustion, which normally requires tens of thousands of recursive depth.</font></p>
+						<p style="text-indent:2em"><font color="black" size="3">Therefore, to expose uncontrolled-recursion effectively, grey-box fuzzers need to have precise awareness about the stack memory consumption of the target program when executing an input.</font></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//CVE-2018-17985 -->
+
+	<!--CVE-2018-4868 -->
+	<div class="about" id="CVE-2018-4868">
+		<div class="container">
+			<h3 class="title">Case Study: CVE-2018-4868</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="center">
+					<div class="clearfix"></div>
+						<figure>
+							<img width="65%" src="Html/images/moti3.jpg">
+						</figure>
+					<div class="clearfix"></div>
+					<p align="center">Vulnerable code in <I>jp2image.cpp</I> in <I>Exiv2 v0.26</I><br><br></p>
+					<div class="clearfix"></div>
+					<div class="contact-form" align="left">
+						<p style="text-indent:2em"><font color="black" size="3">The Figure demonstrates an uncontrolled-memory-allocation problem in <I>exiv2</I>. At line 11-12, when the program parses a <I>subBox</I> in <I>readMetadata()</I>, a length is extracted from the user inputs. Then the length is fed directly into <I>DataBuf()</I> at line 13. Finally, this value is used as the size of a memory allocation request at line 4. Note that the program does not check the size before allocating memory. By carefully handcrafting the input, an adversary can provide arbitrarily large values for <I>subBox.length</I>, leading to program crash (i.e., <I>std::bad_alloc</I>) or running out of memory. </font></p>
+						<p style="text-indent:2em"><font color="black" size="3">To trigger this problem, the fuzzer would need to generate inputs with a large <I>subBox.length</I>. For this purpose, the fuzzer needs to collect information about the value of <I>subBox.length</I> to retain the interesting inputs that can incur a large memory consumption.</font></p>
+						<p style="text-indent:2em"><font color="black" size="3">However, existing coverage-based grey-box fuzzers lack awareness about the value of <I>subBox.length</I>. Therefore, they cannot effectively generate inputs causing <I>subBox.length</I> to become larger. Take AFL as an example, let us assume AFL now holds a seed input <I>a</I> which incurs the <I>subBox.length</I> of 100 and causes the function to enter the <I>while</I> at line 11 and eventually return at line 16. After some mutations, AFL may generate another input <I>b</I> which incurs the <I>subBox.length</I> of 10000 and also causes the function to enter the <I>while</I> at line 11 and return at line 16. We can clearly see that comparing with <I>a</I>, <I>b</I> consumes much more memory and is closer to running out of memory. However, AFL will discard input $b$ and will not retain it as a seed because <I>b</I> does not bring new branch coverage. Consequently, AFL cannot detect this uncontrolled-memory-allocation problem effectively.</font></p>
+						<p style="text-indent:2em"><font color="black" size="3">Therefore, to expose uncontrolled-memory-allocation effectively, grey-box fuzzers also need to have precise awareness about the amount of consumed heap memory of the target program when executing an input.</font></p>	
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//CVE-2018-4868 -->
+
+	<!--video -->
+	<div class="work" id="video">
+		<div class="container">
+			<h3 class="title">Video of Tool Demo</h3>
+			<div class="contact-row">
+				<div class="col-md-12" align="center">
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<div class="col-md-12 portfolio-grids">
+							<iframe type="video/mp4" width="100%" height="100%" src="https://www.youtube.com/embed/an0lIKWeVfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//video -->
+
+	<!--Gallery-->
+	<div id="gallery" class="about">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">Gallery</h3>
+
+			<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+				<li class="resp-tab-item"><span>Uncontrolled Recursion</span></li>
+			</ul>
+
+			<div>
+				<div class="tab_img">
+					<div class="col-md-12 portfolio-grids">
+						<div class="grid">
+							<a href="Reference/Raw/c++filt_24h.png" class="swipebox" title="c++filt_24h">
+								<img src="Reference/Raw/c++filt_24h.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>testing cxxfilt</h3>
+									<p>MemLock against AFL</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			
+			<div><p><br><br><br></p></div>
+
+			<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+				<li class="resp-tab-item"><span>Uncontrolled Memory Allocation</span></li>
+			</ul>
+
+			<div>
+				<div class="tab_img">
+					<div class="col-md-12 portfolio-grids">
+						<div class="grid">
+							<a href="Html/images/Readelf.png" class="swipebox" title="readelf">
+								<img src="Html/images/Readelf.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>readelf 1 hour</h3>
+									<p>MemLock</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+
+					<div class="col-md-12 portfolio-grids">
+						<div class="grid">
+							<a href="Html/images/readelf20h1.png" class="swipebox" title="readelf">
+								<img src="Html/images/readelf20h1.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>readelf 20 hour</h3>
+									<p>MemLock</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+
+					<div class="col-md-12 portfolio-grids">
+						<div class="grid">
+							<a href="Html/images/readelf20h2.png" class="swipebox" title="readelf">
+								<img src="Html/images/readelf20h2.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>readelf 20 hour</h3>
+									<p>MemLock</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+
+					<div class="col-md-6 portfolio-grids">
+						<div class="grid">
+							<a href="Reference/Raw/ld_MemFuzz_20h.png" class="swipebox" title="ld">
+								<img src="Reference/Raw/ld_MemFuzz_20h.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>ld</h3>
+									<p>MemLock</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-6 portfolio-grids">
+						<div class="grid">
+							<a href="Reference/Raw/ld_AFL_20h.png" class="swipebox" title="ld">
+								<img src="Reference/Raw/ld_AFL_20h.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>ld</h3>
+									<p>MemLock</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+					<div class="col-md-12 portfolio-grids">
+						<div class="grid">
+							<a href="Reference/Raw/testFuzz.PNG" class="swipebox" title="test">
+								<img src="Reference/Raw/testFuzz.PNG" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>test</h3>
+									<p>MemLock against AFL</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+
+
+			<div><p><br><br><br></p></div>
+
+			<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+				<li class="resp-tab-item"><span>Memory Leak</span></li>
+			</ul>
+
+			<div>
+				<div class="tab_img">
+					<div class="col-md-12 portfolio-grids">
+						<div class="grid">
+							<a href="Reference/Raw/Worst-case_Memory_Leak.png" class="swipebox" title="libming">
+								<img src="Reference/Raw/Worst-case_Memory_Leak.png" alt="" class="img-responsive" />
+								<div class="figcaption">
+									<h3>libming</h3>
+									<p>Leak Bytes</p>
+								</div>
+							</a>	
+						</div>
+					</div>
+
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--//Gallery-->
+	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>©2020 MemLock All rights reserved.</p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Html/js/bootstrap.js"></script>
+</body>
+</html>
