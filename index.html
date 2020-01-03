@@ -53,7 +53,7 @@
 				<div>
 					<br>
 					<h1><br><font size="20" face="verdana" color="white"><B>MemLock</B></font></h1>
-					<h3><br><font size="6" color="white"><B>Automatically Generating Inputs On Excessive Memory Consumption</B></font></h3>
+					<h3><br><font size="6" color="white"><B>Memory Usage Guided Fuzzing</B></font></h3>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -91,7 +91,7 @@
         <div class="container">
             <h3 class="title"> About MemLock</h3>
             <div class="col-md-8 about-left" style="text-indent:2em">
-                <p><font color="black" size="3.5">Uncontrolled memory consumption is one kind of software security weaknesses. It can also become a security-critical vulnerability when attackers can control the input to consume a large amount of memory to launch a Denial-of-Service attack. However, detecting such vulnerability is challenging due to the fact that it requires long executions with well-crafted inputs to trigger excessive memory consumption, while the state-of-the-art testing techniques have mostly focused on code coverage. To tackle this challenge, we propose a feedback-directed fuzzing technique, named MemLock, to automatically generate those memory-consuming inputs to trigger memory consumption bugs. We guide the fuzzing process using memory consumption information so that our approach is general and does not require any domain knowledge. We perform a thorough evaluation for MemLock on 14 widely-used real-world programs. Our experiment results show that MemLock substantially outperforms the state-of-the-art fuzzing techniques, including AFL, AFLfast, PerfFuzz, FairFuzz and QSYM, in discovering memory consumption bugs. During the experiments, we discovered several previously unknown excessive memory consumption vulnerabilities and received 17 new CVEs.</font></p>
+                <p><font color="black" size="3.5">Uncontrolled memory consumption is a kind of critical software security weaknesses. It can also become a security-critical vulnerability when attackers can take control of the input to consume a large amount of memory and launch a Denial-of-Service attack.  However, detecting such vulnerability is challenging, as the state-of-the-art fuzzing techniques focus on the code coverage but not memory consumption. To this end, we propose a memory usage guided fuzzing technique, named MemLock, to generate the excessive memory consumption inputs and trigger uncontrolled memory consumption bugs. The fuzzing process is guided with memory consumption information so that our approach is general and does not require any domain knowledge. We perform a thorough evaluation for MemLock on 14 widely-used real-world programs. Our experiment results show that MemLock substantially outperforms the state-of-the-art fuzzing techniques, including AFL, AFLfast, PerfFuzz, FairFuzz, Angora and QSYM, in discovering memory consumption bugs. During the experiments, we discovered many previously unknown memory consumption bugs and received 15 new CVEs.</font></p>
             </div>
             <div class="col-md-4 about-right">
                 <img src="Html/images/mlogo2.jpg" width="85%" alt=""/>
@@ -103,25 +103,6 @@
     </div>
 	<!--//about-->
 	
-	<!--github-->
-    <div id="github" class="about">
-		<div class="container">
-			<h3 class="title"> Github</h3>
-			<div class="col-md-8 about-left" style="text-indent:2em">
-				<p><br></p>
-				<p><br></p>
-				<p style="text-indent:0em">MemLock is available on Github.</p>
-				<p><br></p>
-				<p style="text-indent:4em"><font color="black" size="5.5"><a href="https://github.com/ICSE2020-MemLock/MemLock">https://github.com/ICSE2020-MemLock/MemLock</a></font></p>
-			</div>
-			<div class="col-md-4 about-right">
-				<img src="Html/images/githubbig.jpg" width="85%" alt=""/>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!--//github-->
 
 	<!--Map -->
 	<div class="work" id="map">
@@ -137,8 +118,6 @@
 						<ol>
 							<li><a href="#about" class="scroll"><B>About MemLock</B></a></li></li>
 								<ul style="text-indent:2em">MemLock is a dedicated fuzzing technique to automatically discover memory consumption related bugs, thorough generating inputs on excessive memory consumption.</ul>
-							<li><a href="#github" class="scroll"><B>Github</B></a></li></li>
-								<ul style="text-indent:2em">MemLock is available on Github.</ul>
 							<li><a href="#conBugs" class="scroll"><B>Memory Consumption Related Bugs</B></a></li>
 								<ul style="text-indent:2em">We focus on three types of memory consumption related bugs: "CWE-674: uncontrolled-recursion", "CWE-789: uncontrolled-memory-allocation", and "CWE-401: memory leak".</ul>
 							<li><a href="#approach" class="scroll"><B>MemLock's Solution</B></a></li>
@@ -163,6 +142,8 @@
 								<ul style="text-indent:2em">We have examined 63 recently published papers on fuzz testing located by perusing top-conference proceedings and other quality venues, and studied their appoarch. We made a simple comb and summary. Our investigation of fuzzing can also be seen in the summary: <a href="https://ICSE2020-MemLock.github.io/RelatedWork/"><U>ICSE2020-MemLock.github.io/RelatedWork</U></a>.</ul>
 							<li><a href="#video" class="scroll"><B>Video of Tool Demo for Explanation</B></a></li>
 								<ul style="text-indent:2em">We show a video of our tool demo.</ul>
+							<li><a href="#link" class="scroll"><B>Link</B></a></li></li>
+								<ul style="text-indent:2em">MemLock is available now.</ul>
 						</ol>
 						</font>
 					</div>
@@ -812,52 +793,6 @@
 											<a href="https://github.com/ICSE2020-MemLock/MemLock_Benchmark/tree/master/jasper">https://github.com/ICSE2020-MemLock/MemLock_Benchmark/tree/master/jasper</a>
 										</td>
 									</tr>
-									<tr>
-										<td height="21" class="xl65">
-											zzdir
-										</td>
-										<td class="xl65">
-											ZZIPlib
-										</td>
-										<td class="xl68">
-											0.13.68
-										</td>
-										<td class="xl66" align="right">
-											15,862
-										</td>
-										<td class="xl68">
-											zip
-										</td>
-										<td class="xl65">
-											zzdir @@
-										</td>
-										<td class="xl65">
-											<a href="https://github.com/ICSE2020-MemLock/MemLock_Benchmark/tree/master/zziplib">https://github.com/ICSE2020-MemLock/MemLock_Benchmark/tree/master/zziplib</a>
-										</td>
-									</tr>
-									<tr>
-										<td height="21" class="xl65">
-											podofoimgextract
-										</td>
-										<td class="xl65">
-											PoDoFo
-										</td>
-										<td class="xl68">
-											0.9.5
-										</td>
-										<td class="xl66" align="right">
-											290,586
-										</td>
-										<td class="xl68">
-											pdf
-										</td>
-										<td class="xl65">
-											podofoimgextract @@ ./out
-										</td>
-										<td class="xl65">
-											<a href="https://github.com/ICSE2020-MemLock/MemLock_Benchmark/tree/master/podofo">https://github.com/ICSE2020-MemLock/MemLock_Benchmark/tree/master/podofo</a>
-										</td>
-									</tr>
 								</tbody>
 							</table>
 							</div>
@@ -884,8 +819,8 @@
 							<div align="left">
 								<p><br></p>
 								<p style="text-indent:2em"><font color="black" size="3">To evaluate the effectiveness of fuzzers, a direct measurement is the number of unique crashes found by different fuzzers. It is believed that, more unique crashes usually indicate higher chances of covering more unique vulnerabilities.</font></p>
-								<p style="text-indent:2em"><font color="black" size="3">The table below shows the number of unique crashes found by 6 different fuzzers within 24 hours in the benchmark programs. It is worth noting that, we only count the unique crashes related to memory consumption. Out of the 17 groups of experiments, MemLock performs best in the 14 (82.4%) group of experiments among 6 different fuzzers, as shown in column <I>MemLock</I>. In total, MemLock finds 2009 unique memory consumption-related crashes in the benchmark programs, improving by 59.2%, 70.5%, 76.9%, 98.1% and 66.7% respectively, compared to state-of-the-art fuzzers AFL, AFLfast, PerfFuzz, FairFuzz and QSYM. Especially, MemLock is able to find unique crashes in all benchmark programs, while other 5 state-of-the-art fuzzers may not find unique crashes in some benchmark programs. For example, other 5 state-of-the-art fuzzers cannot find any unique crashes in the program <I>flex</I>, however, MemLock can find 61 unique crashes within 24 hours.</font></p>
-								<p style="text-indent:2em"><font color="black" size="3">Following Klees' recommendation, we also conduct the statistic test for the results. The A<sub>12</sub> statistic measures the probability that one fuzzer outperforms another fuzzer, as shown in columns with the heading A<sub>12</sub>. Further, we use <I>Mann-Whitney U</I> to measure the statistical significance of performance gain. When significant, we mark the corresponding A<sub>12</sub> values in the bold. Out of 85 A<sub>12</sub> values in the table, 60 (70.6%) A<sub>12</sub> values are bold and exceeding the conventionally large effect size (0.71). Thus, we can conclude that \toolname significantly outperforms other 5 state-of-the-art fuzzers in most benchmark programs.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">The table below shows the number of unique crashes found by 7 different fuzzers within 24 hours in the benchmark programs. It is worth noting that, we only count the unique crashes related to memory consumption. Out of the 17 groups of experiments, MemLock performs best in the 10 (58.8%) group of experiments among 7 different fuzzers, as shown in column <I>MemLock</I>. In total, MemLock finds 2009 unique memory consumption-related crashes in the benchmark programs, improving by 59.2%, 70.5%, 76.9%, 98.1%, 40.5% and 66.7% respectively, compared to state-of-the-art fuzzers AFL, AFLfast, PerfFuzz, FairFuzz, Angora and QSYM. Especially, MemLock is able to find unique crashes in all benchmark programs, while other 6 state-of-the-art fuzzers may not find unique crashes in some benchmark programs. For example, other 5 state-of-the-art fuzzers cannot find any unique crashes in the program <I>flex</I>, however, MemLock can find 61 unique crashes within 24 hours.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">Following Klees' recommendation, we also conduct the statistic test for the results. The A<sub>12</sub> statistic measures the probability that one fuzzer outperforms another fuzzer, as shown in columns with the heading A<sub>12</sub>. Further, we use <I>Mann-Whitney U</I> to measure the statistical significance of performance gain. When significant, we mark the corresponding A<sub>12</sub> values in the bold. Out of 102 A<sub>12</sub> values in the table, 72 (70.6%) A<sub>12</sub> values are bold and exceeding the conventionally large effect size (0.71). Thus, we can conclude that MemLock significantly outperforms other 5 state-of-the-art fuzzers in most benchmark programs.</font></p>
 								<p style="text-indent:2em"><font color="black" size="3">As MemLock focuses on the space complexity issues, it prefers the longer test cases and thus may degrade the capability to find other types of vulnerabilities. For example, longer test cases tend to trigger uncontrolled-recursion issues. Therefore, we also evaluate the capability to find other types of crashes. In the benchmark programs, the state-of-the-art fuzzers MemLock, AFL, AFLfast, PerfFuzz, FairFuzz and QSYM find 77, 239, 228, 189, 276 and 236 other types of unique crashes, respectively.</font></p>
 								<p><br></p>
 							</div>
@@ -905,10 +840,10 @@
 										<td rowspan="3" class="xl72" width="120" align="center">
 											<B>Vulnerability</B>
 										</td>
-										<td colspan="12" class="xl72" width="1068" align="center">
+										<td colspan="14" class="xl72" width="1068" align="center">
 											<B>Unique Crashes</B>
 										</td>
-										<td colspan="10" class="xl73" width="666" align="center">
+										<td colspan="12" class="xl73" width="666" align="center">
 											<B>Statistical Test</B>
 										</td>
 									</tr>
@@ -929,6 +864,9 @@
 											<B>fairFuzz</B>
 										</td>
 										<td colspan="2" class="xl72" align="center">
+											<B>Angora</B>
+										</td>
+										<td colspan="2" class="xl72" align="center">
 											<B>QSYM</B>
 										</td>
 										<td colspan="2" class="xl77" align="center">
@@ -943,11 +881,20 @@
 										<td colspan="2" class="xl77" align="center">
 											<B>FairFuzz</B>
 										</td>
+										<td colspan="2" class="xl72" align="center">
+											<B>Angora</B>
+										</td>
 										<td colspan="2" class="xl77" align="center">
 											<B>QSYM</B>
 										</td>
 									</tr>
 									<tr>
+										<td height="20" class="xl72" align="center">
+											<B>MemCrash</B>
+										</td>
+										<td class="xl73" align="center">
+											Other
+										</td>
 										<td height="20" class="xl72" align="center">
 											<B>MemCrash</B>
 										</td>
@@ -983,6 +930,12 @@
 										</td>
 										<td class="xl73" align="center"> 
 											Other
+										</td>
+										<td class="xl77" align="center">
+											<B>p-value</B>
+										</td>
+										<td class="xl77" align="center">
+											<B>A<sub>12</sub></B>
 										</td>
 										<td class="xl77" align="center">
 											<B>p-value</B>
@@ -1056,6 +1009,12 @@
 											219
 										</td>
 										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>30</B>
 										</td>
 										<td class="xl69" align="right">
@@ -1080,6 +1039,12 @@
 											0.96
 										</td>
 										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
 											0.0152
 										</td>
 										<td class="xl80" align="right">
@@ -1133,6 +1098,12 @@
 											0
 										</td>
 										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>327</B>
 										</td>
 										<td class="xl69" align="right">
@@ -1157,6 +1128,12 @@
 											0.88
 										</td>
 										<td class="xl66" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
 											0.0152
 										</td>
 										<td class="xl80" align="right">
@@ -1210,6 +1187,12 @@
 											0
 										</td>
 										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>20</B>
 										</td>
 										<td class="xl69" align="right">
@@ -1228,6 +1211,12 @@
 											1.00
 										</td>
 										<td class="xl79" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl66" align="right">
 											0.0105
 										</td>
 										<td class="xl80" align="right">
@@ -1287,6 +1276,12 @@
 											0
 										</td>
 										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>4</B>
 										</td>
 										<td class="xl69" align="right">
@@ -1311,6 +1306,12 @@
 											1.00
 										</td>
 										<td class="xl66" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
 											0.0101
 										</td>
 										<td class="xl80" align="right">
@@ -1368,6 +1369,18 @@
 										</td>
 										<td class="xl69" align="right">
 											0
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											1.00
 										</td>
 										<td class="xl79" align="right">
 											0.0101
@@ -1444,6 +1457,12 @@
 											<B>0</B>
 										</td>
 										<td class="xl69" align="right">
+											296
+										</td>
+										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
 											0
 										</td>
 										<td class="xl79" align="right">
@@ -1476,6 +1495,12 @@
 										<td class="xl80" align="right">
 											1.00
 										</td>
+										<td class="xl79" align="right">
+											0.0105
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
 									</tr>
 									<tr>
 										<td height="21" class="xl66">
@@ -1488,7 +1513,7 @@
 											uncontrolled-recursion
 										</td>
 										<td class="xl71" align="right">
-											<font color="red"><B>23</B></font>
+											<B>23</B>
 										</td>
 										<td class="xl69" align="right">
 											49
@@ -1506,7 +1531,7 @@
 											41
 										</td>
 										<td class="xl71" align="right">
-											<font color="red"><B>23</B></font>
+											<B>23</B>
 										</td>
 										<td class="xl69" align="right">
 											73
@@ -1516,6 +1541,12 @@
 										</td>
 										<td class="xl69" align="right">
 											44
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>26</B></font>
+										</td>
+										<td class="xl69" align="right">
+											22
 										</td>
 										<td class="xl69" align="right">
 											<B>7</B>
@@ -1546,6 +1577,12 @@
 										</td>
 										<td class="xl66" align="right">
 											0.88
+										</td>
+										<td class="xl79" align="right">
+											0.0101
+										</td>
+										<td class="xl80" align="right">
+											0.25
 										</td>
 										<td class="xl79" align="right">
 											0.0142
@@ -1589,6 +1626,12 @@
 											0
 										</td>
 										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>13</B>
 										</td>
 										<td class="xl69" align="right">
@@ -1620,6 +1663,12 @@
 										</td>
 										<td class="xl66" align="right">
 											0.0147
+										</td>
+										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0152
 										</td>
 										<td class="xl80" align="right">
 											1.00
@@ -1672,6 +1721,12 @@
 											0
 										</td>
 										<td class="xl66" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl66" align="right">
+											11
+										</td>
+										<td class="xl66" align="right">
 											<B>114</B>
 										</td>
 										<td class="xl66" align="right">
@@ -1700,6 +1755,12 @@
 										</td>
 										<td class="xl65" align="right">
 											0.88
+										</td>
+										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl80" align="right">
+											1.00
 										</td>
 										<td class="xl79" align="right">
 											0.0060
@@ -1749,6 +1810,12 @@
 											6
 										</td>
 										<td class="xl66" align="right">
+											<B>13</B>
+										</td>
+										<td class="xl66" align="right">
+											6
+										</td>
+										<td class="xl66" align="right">
 											<B>8</B>
 										</td>
 										<td class="xl66" align="right">
@@ -1777,6 +1844,12 @@
 										</td>
 										<td class="xl80" align="right">
 											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.0443
+										</td>
+										<td class="xl66" align="right">
+											0.16
 										</td>
 										<td class="xl79" align="right">
 											0.5000
@@ -1826,6 +1899,12 @@
 											0
 										</td>
 										<td class="xl69" align="right">
+											<B>0</B>
+										</td>
+										<td class="xl69" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>5</B>
 										</td>
 										<td class="xl69" align="right">
@@ -1856,6 +1935,12 @@
 											0.46
 										</td>
 										<td class="xl79" align="right">
+											0.0152
+										</td>
+										<td class="xl78" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
 											0.0706
 										</td>
 										<td class="xl78" align="right">
@@ -1873,7 +1958,7 @@
 											uncontrolled-memory-allocation
 										</td>
 										<td class="xl69" align="right">
-											<font color="red"><B>5</B></font>
+											<B>5</B>
 										</td>
 										<td rowspan="2" class="xl71" align="right">
 											1
@@ -1901,6 +1986,12 @@
 										</td>
 										<td rowspan="2" class="xl71" align="right">
 											1
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>189</B></font>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											4
 										</td>
 										<td class="xl69" align="right">
 											<B>1</B>
@@ -1933,6 +2024,12 @@
 											1.00
 										</td>
 										<td class="xl79" align="right">
+											0.0038
+										</td>
+										<td class="xl80" align="right">
+											0.00
+										</td>
+										<td class="xl79" align="right">
 											0.0036
 										</td>
 										<td class="xl80" align="right">
@@ -1944,22 +2041,25 @@
 											memory leak
 										</td>
 										<td class="xl69" align="right">
-											<font color="red"><B>145</B></font>
+											<B>145</B>
 										</td>
 										<td class="xl69" align="right">
-											78
+											<B>78</B>
 										</td>
 										<td class="xl69" align="right">
 											<B>72</B>
 										</td>
 										<td class="xl69" align="right">
-											61
+											<B>61</B>
 										</td>
 										<td class="xl69" align="right">
 											<B>125</B>
 										</td>
 										<td class="xl69" align="right">
-											74
+											<font color="red"><B>290</B></font>
+										</td>
+										<td class="xl69" align="right">
+											<B>74</B>
 										</td>
 										<td class="xl79" align="right">
 											0.0060
@@ -1984,6 +2084,12 @@
 										</td>
 										<td class="xl80" align="right">
 											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl80" align="right">
+											0.00
 										</td>
 										<td class="xl79" align="right">
 											0.0060
@@ -2033,6 +2139,12 @@
 											0
 										</td>
 										<td class="xl69" align="right">
+											<B>3</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
+											0
+										</td>
+										<td class="xl69" align="right">
 											<B>16</B>
 										</td>
 										<td rowspan="2" class="xl71" align="right">
@@ -2066,6 +2178,12 @@
 											0.0626
 										</td>
 										<td class="xl78" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl78" align="right">
 											0.80
 										</td>
 									</tr>
@@ -2087,6 +2205,9 @@
 										</td>
 										<td class="xl69" align="right">
 											<font color="red"><B>371</B></font>
+										</td>
+										<td class="xl69" align="right">
+											<B>87</B>
 										</td>
 										<td class="xl69" align="right">
 											<B>354</B>
@@ -2114,6 +2235,12 @@
 										</td>
 										<td class="xl80" align="right">
 											0.00
+										</td>
+										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl80" align="right">
+											1.00
 										</td>
 										<td class="xl79" align="right">
 											0.0061
@@ -2166,6 +2293,12 @@
 											<B>2</B>
 										</td>
 										<td rowspan="2" class="xl71" align="right">
+											4
+										</td>
+										<td class="xl69" align="right">
+											<B>2</B>
+										</td>
+										<td rowspan="2" class="xl71" align="right">
 											6
 										</td>
 										<td class="xl79" align="right">
@@ -2193,6 +2326,12 @@
 											0.56
 										</td>
 										<td class="xl79" align="right">
+											0.0060
+										</td>
+										<td class="xl65" align="right">
+											1.00
+										</td>
+										<td class="xl79" align="right">
 											0.0124
 										</td>
 										<td class="xl65" align="right">
@@ -2210,13 +2349,16 @@
 											<B>234</B>
 										</td>
 										<td class="xl69" align="right">
-											<font color="red"><B>235</B></font>
+											<B>235</B>
 										</td>
 										<td class="xl69" align="right">
 											<B>35</B>
 										</td>
 										<td class="xl69" align="right">
 											<B>216</B>
+										</td>
+										<td class="xl69" align="right">
+											<font color="red"><B>820</B></font>
 										</td>
 										<td class="xl69" align="right">
 											<B>212</B>
@@ -2244,6 +2386,12 @@
 										</td>
 										<td class="xl78" align="right">
 											0.40
+										</td>
+										<td class="xl79" align="right">
+											0.0061
+										</td>
+										<td class="xl66" align="right">
+											0.00
 										</td>
 										<td class="xl79" align="right">
 											0.4583
@@ -2287,6 +2435,12 @@
 											276
 										</td>
 										<td class="xl75" align="right">
+											<B>1430</B>
+										</td>
+										<td class="xl75" align="right">
+											343
+										</td>
+										<td class="xl75" align="right">
 											<B>1205</B>
 										</td>
 										<td class="xl75" align="right">
@@ -2319,6 +2473,11 @@
 										</td>
 										<td class="xl76" align="right">
 											<font color="blue"><B>+98.13%</B></font>
+										</td>
+										<td class="xl76">
+										</td>
+										<td class="xl76" align="right">
+											<font color="blue"><B>+40.49%</B></font>
 										</td>
 										<td class="xl76">
 										</td>
@@ -2397,8 +2556,8 @@
 							<div align="left">
 								<p><br></p>
 								<p style="text-indent:2em"><font color="black" size="3">Although there is a weak correlation between the number of unique crashes and the number of vulnerabilities found during the fuzzing process. A more important measurement is the capability to find real-world vulnerabilities, as suggested by Klees. Thus, we compare the capability of MemLock to find unique vulnerabilities against baseline fuzzers in this section.</font></p>
-								<p style="text-indent:2em"><font color="black" size="3">The table below shows the statistic results in 6 different state-of-the-art fuzzers. The benchmark programs totally contain 35 vulnerabilities, out of which MemLock performs best in the 27 vulnerabilities among 6 state-of-the-art fuzzers, as shown in column <I>MemLock</I>. MemLock averagely takes about 5.4 hours to find each unique vulnerability, which is 2.15, 2.15, 2.20, 2.69, 2.07 times faster than the state-of-the-art fuzzers AFL, AFlfast, PerfFuzz, FairFuzz, and QSYM respectively. In particular, \toolname find 34 out of 35 unique vulnerabilities within 24 hours, while other fuzzers AFL, AFLfast, PerfFuzz, FairFuzz and QSYM only find 26, 28, 20, 17 and 25, respectively. The four unique vulnerabilities (i.e., issue#106, CVE-2018-18701, CVE-2019-6293 and CVE-2019-7698) in <I>mjs</I>, <I>nm</I>, <I>flex</I>, and <I>bento4</I> can  found by only \toolname within 24 hours. Therefore, it is proved that our memory-consumption guided strategy is very effective to find memory consumption-related bugs.</font></p>
-								<p style="text-indent:2em"><font color="black" size="3">In addition, we also conduct the statistic test for real-world vulnerability evaluation. Out of 170 A<sub>12</sub> values in the table, 111 (65.3%) A<sub>12</sub> values are bold and exceeding the conventionally large effect size (0.71). Thus, MemLock significantly outperforms other 5 state-of-the-art fuzzers in finding unique vulnerabilities.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">The table below shows the statistic results in 7 different fuzzers. The benchmark programs totally contain 34 vulnerabilities, out of which MemLock performs best in the 25 vulnerabilities among 6 state-of-the-art fuzzers, as shown in column <I>MemLock</I>. MemLock averagely takes about 5.4 hours to find each unique vulnerability, which is 2.15, 2.15, 2.20, 2.69, 3.76, 2.07 times faster than the state-of-the-art fuzzers AFL, AFlfast, PerfFuzz, FairFuzz, Angora and QSYM respectively. In particular, MemLock find 33 out of 34 unique vulnerabilities within 24 hours, while other fuzzers AFL, AFLfast, PerfFuzz, FairFuzz, Angora and QSYM only find 26, 28, 20, 17, 6 and 25, respectively. The three unique vulnerabilities (i.e., issue#106, CVE-2018-18701 and CVE-2019-6293) in <I>mjs</I>, <I>nm</I>, and <I>flex</I> can  found by only MemLock within 24 hours. Therefore, it is proved that our memory-consumption guided strategy is very effective to find memory consumption-related bugs.</font></p>
+								<p style="text-indent:2em"><font color="black" size="3">In addition, we also conduct the statistic test for real-world vulnerability evaluation. Out of 204 A<sub>12</sub> values in the table, 139 (68.1%) A<sub>12</sub> values are bold and exceeding the conventionally large effect size (0.71). Thus, MemLock significantly outperforms other 6 state-of-the-art fuzzers in finding unique vulnerabilities.</font></p>
 								<p><br></p>
 							</div>
 							<div class="clearfix"></div>
@@ -2417,10 +2576,10 @@
 										<td rowspan="2" class="xl80" width="235" align="center">
 											<B>Type</B>
 										</td>
-										<td colspan="6" class="xl72" width="384" align="center">
+										<td colspan="7" class="xl72" width="384" align="center">
 											<B>Exposing Time (hours)</B>
 										</td>
-										<td colspan="10" class="xl76" width="640" align="center">
+										<td colspan="12" class="xl76" width="640" align="center">
 											<B>Statistical Test (p-value &amp; A<sub>12</sub>)</B>
 										</td>
 									</tr>
@@ -2441,6 +2600,9 @@
 											<B>FairFuzz</B>
 										</td>
 										<td class="xl72" align="center">
+											<B>Angora</B>
+										</td>
+										<td class="xl72" align="center">
 											<B>QSYM</B>
 										</td>
 										<td colspan="2" class="xl82" align="center">
@@ -2454,6 +2616,9 @@
 										</td>
 										<td colspan="2" class="xl76" align="center">
 											<B>FairFuzz</B>
+										</td>
+										<td colspan="2" class="xl76" align="center">
+											<B>Angora</B>
 										</td>
 										<td colspan="2" class="xl76" align="center">
 											<B>QSYM</B>
@@ -2485,6 +2650,9 @@
 											0.4
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											0.3
 										</td>
 										<td class="xl68" align="right">
@@ -2510,6 +2678,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.25
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl71" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.1168
@@ -2542,6 +2716,15 @@
 										</td>
 										<td class="xl69" align="right">
 											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0019
@@ -2599,6 +2782,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											3.3
 										</td>
@@ -2619,6 +2805,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.81
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0101
@@ -2658,11 +2850,20 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl68" align="right">
 											0.0105
 										</td>
 										<td class="xl79" align="right">
 											0.00
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
 										</td>
 										<td class="xl68" align="right">
 											nan
@@ -2712,6 +2913,9 @@
 											1.9
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											1.4
 										</td>
 										<td class="xl68" align="right">
@@ -2731,6 +2935,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.63
+										</td>
+										<td class="xl68" align="right">
+											0.0127
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0127
@@ -2768,6 +2978,9 @@
 											8
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											1.4
 										</td>
 										<td class="xl68" align="right">
@@ -2787,6 +3000,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.63
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0132
@@ -2824,6 +3043,9 @@
 											12.6
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											1.4
 										</td>
 										<td class="xl68" align="right">
@@ -2845,6 +3067,12 @@
 											0.75
 										</td>
 										<td align="right" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
 											0.0105
 										</td>
 										<td class="xl79" align="right">
@@ -2882,6 +3110,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											12.8
 										</td>
@@ -2902,6 +3133,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0105
@@ -2938,6 +3175,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											13.3
 										</td>
@@ -2963,6 +3203,12 @@
 											0.0105
 										</td>
 										<td class="xl80" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl71" align="right">
 											1.00
 										</td>
 										<td class="xl68" align="right">
@@ -2994,6 +3240,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											14
 										</td>
@@ -3008,6 +3257,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0105
@@ -3053,6 +3308,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl68" align="right">
 											0.3315
 										</td>
@@ -3064,6 +3322,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0105
@@ -3108,6 +3372,15 @@
 										</td>
 										<td class="xl69" align="right">
 											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0019
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0019
@@ -3162,6 +3435,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											15.8
 										</td>
@@ -3179,6 +3455,12 @@
 										</td>
 										<td class="xl68" align="right">
 											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0101
 										</td>
 										<td class="xl79" align="right">
 											1.00
@@ -3221,6 +3503,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl68" align="right">
 											0.0344
 										</td>
@@ -3240,10 +3525,16 @@
 											0.88
 										</td>
 										<td class="xl68" align="right">
-											0.0344
+											0.0105
 										</td>
 										<td class="xl79" align="right">
 											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0344
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0344
@@ -3277,6 +3568,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											17.6
 										</td>
@@ -3294,6 +3588,12 @@
 										</td>
 										<td class="xl68" align="right">
 											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
 										</td>
 										<td class="xl79" align="right">
 											1.00
@@ -3333,6 +3633,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											7.5
 										</td>
@@ -3350,6 +3653,12 @@
 										</td>
 										<td class="xl68" align="right">
 											0.0152
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
 										</td>
 										<td class="xl79" align="right">
 											1.00
@@ -3394,6 +3703,15 @@
 										</td>
 										<td class="xl69" align="right">
 											T/O
+										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
+										<td class="xl68" align="right">
+											0.0036
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0036
@@ -3454,6 +3772,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl68" align="right">
 											0.0101
 										</td>
@@ -3471,6 +3792,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.81
+										</td>
+										<td class="xl68" align="right">
+											0.0101
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0101
@@ -3510,6 +3837,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl68" align="right">
 											0.0334
 										</td>
@@ -3533,6 +3863,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0334
@@ -3567,6 +3903,9 @@
 											8.5
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											5
 										</td>
 										<td class="xl68" align="right">
@@ -3592,6 +3931,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.88
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0769
@@ -3621,6 +3966,9 @@
 										</td>
 										<td class="xl66" align="right">
 											9.5
+										</td>
+										<td class="xl66" align="right">
+											T/O
 										</td>
 										<td class="xl66" align="right">
 											7.4
@@ -3655,6 +4003,12 @@
 										<td class="xl79" align="right">
 											1.00
 										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
 									</tr>
 									<tr>
 										<td height="21" class="xl66">
@@ -3676,10 +4030,13 @@
 											14.6
 										</td>
 										<td class="xl66" align="right">
+											<font color="red">0.92</font>
+										</td>
+										<td class="xl66" align="right">
 											11.3
 										</td>
 										<td class="xl66" align="right">
-											<font color="red">10.5</font>
+											10.5
 										</td>
 										<td class="xl68" align="right">
 											0.4388
@@ -3704,6 +4061,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.56
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl71" align="right">
+											0.00
 										</td>
 										<td class="xl68" align="right">
 											0.4408
@@ -3738,6 +4101,9 @@
 											5.3
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											0.8
 										</td>
 										<td class="xl68" align="right">
@@ -3760,6 +4126,12 @@
 										</td>
 										<td class="xl68" align="right">
 											0.0132
+										</td>
+										<td class="xl79" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
+											0.0105
 										</td>
 										<td class="xl79" align="right">
 											1.00
@@ -3797,6 +4169,9 @@
 											0.3
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											0.3
 										</td>
 										<td class="xl68" align="right">
@@ -3822,6 +4197,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.68
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0091
@@ -3857,6 +4238,15 @@
 										</td>
 										<td class="xl66" align="right">
 											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
 										</td>
 										<td class="xl68" align="right">
 											nan
@@ -3915,6 +4305,9 @@
 											0.4
 										</td>
 										<td class="xl66" align="right">
+											<font color="red">0.1</font>
+										</td>
+										<td class="xl66" align="right">
 											0.4
 										</td>
 										<td class="xl68" align="right">
@@ -3942,6 +4335,12 @@
 											0.50
 										</td>
 										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl71" align="right">
+											0.00
+										</td>
+										<td class="xl68" align="right">
 											nan
 										</td>
 										<td class="xl71" align="right">
@@ -3956,7 +4355,7 @@
 											uncontrolled-memory-allocation
 										</td>
 										<td class="xl66" align="right">
-											<font color="red">14.6</font>
+											14.6
 										</td>
 										<td class="xl69" align="right">
 											T/O
@@ -3969,36 +4368,45 @@
 										</td>
 										<td class="xl69" align="right">
 											T/O
+										</td>
+										<td class="xl69" align="right">
+											<font color="red">0.5</font>
 										</td>
 										<td class="xl69" align="right">
 											T/O
 										</td>
 										<td class="xl68" align="right">
-											0.019
+											0.0190
 										</td>
 										<td class="xl79" align="right">
 											1.00
 										</td>
 										<td class="xl68" align="right">
-											0.019
+											0.0190
 										</td>
 										<td class="xl79" align="right">
 											1.00
 										</td>
 										<td class="xl68" align="right">
-											0.019
+											0.0190
 										</td>
 										<td class="xl79" align="right">
 											1.00
 										</td>
 										<td class="xl68" align="right">
-											0.019
+											0.0190
 										</td>
 										<td class="xl79" align="right">
 											1.00
 										</td>
 										<td class="xl68" align="right">
-											0.019
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											0.00
+										</td>
+										<td class="xl68" align="right">
+											0.0190
 										</td>
 										<td class="xl79" align="right">
 											1.00
@@ -4030,6 +4438,9 @@
 											0.4
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											1.6
 										</td>
 										<td class="xl68" align="right">
@@ -4055,6 +4466,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.36
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0712
@@ -4088,6 +4505,15 @@
 										</td>
 										<td class="xl66" align="right">
 											0.1
+										</td>
+										<td class="xl66" align="right">
+											0.1
+										</td>
+										<td class="xl68" align="right">
+											nan
+										</td>
+										<td class="xl71" align="right">
+											0.50
 										</td>
 										<td class="xl68" align="right">
 											nan
@@ -4143,6 +4569,9 @@
 											1.2
 										</td>
 										<td class="xl66" align="right">
+											T/O
+										</td>
+										<td class="xl66" align="right">
 											1.6
 										</td>
 										<td class="xl68" align="right">
@@ -4168,6 +4597,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.42
+										</td>
+										<td class="xl68" align="right">
+											0.0105
+										</td>
+										<td class="xl71" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.2654
@@ -4201,6 +4636,9 @@
 										<td class="xl69" align="right">
 											T/O
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											15.3
 										</td>
@@ -4215,6 +4653,12 @@
 										</td>
 										<td class="xl79" align="right">
 											0.84
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0075
@@ -4257,6 +4701,9 @@
 										<td class="xl66" align="right">
 											11.9
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											10
 										</td>
@@ -4283,6 +4730,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.64
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl71" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.3566
@@ -4316,6 +4769,9 @@
 										<td class="xl66" align="right">
 											10.3
 										</td>
+										<td class="xl69" align="right">
+											T/O
+										</td>
 										<td class="xl66" align="right">
 											18.2
 										</td>
@@ -4342,6 +4798,12 @@
 										</td>
 										<td class="xl71" align="right">
 											0.52
+										</td>
+										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl79" align="right">
+											1.00
 										</td>
 										<td class="xl68" align="right">
 											0.0296
@@ -4372,6 +4834,9 @@
 										<td class="xl66" align="right">
 											2.2
 										</td>
+										<td class="xl69" align="right">
+											15.9
+										</td>
 										<td class="xl66" align="right">
 											4
 										</td>
@@ -4400,6 +4865,12 @@
 											0.68
 										</td>
 										<td class="xl68" align="right">
+											0.0075
+										</td>
+										<td class="xl71" align="right">
+											1.00
+										</td>
+										<td class="xl68" align="right">
 											0.2654
 										</td>
 										<td class="xl71" align="right">
@@ -4411,7 +4882,7 @@
 											<B>umber of vulnerabilities revealed</B>
 										</td>
 										<td class="xl65" align="right">
-											<font color="red"><B>34</B></font>
+											<font color="red"><B>33</B></font>
 										</td>
 										<td class="xl65" align="right">
 											26
@@ -4426,6 +4897,9 @@
 											17
 										</td>
 										<td class="xl65" align="right">
+											6
+										</td>
+										<td class="xl65" align="right">
 											25
 										</td>
 									</tr>
@@ -4437,19 +4911,22 @@
 											<font color="blue">-</font>
 										</td>
 										<td class="xl75" align="right">
-											<font color="blue">+30.77%</font>
+											<font color="blue">+26.92%</font>
 										</td>
 										<td class="xl75" align="right">
-											<font color="blue">+21.43%</font>
+											<font color="blue">+17.86%</font>
 										</td>
 										<td class="xl75" align="right">
-											<font color="blue">+70.00%</font>
+											<font color="blue">+65.00%</font>
 										</td>
 										<td class="xl75" align="right">
-											<font color="blue">+100.00%</font>
+											<font color="blue">+94.12%</font>
 										</td>
 										<td class="xl75" align="right">
-											<font color="blue">+36.00%</font>
+											<font color="blue">+450.00%</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">+32.00%</font>
 										</td>
 									</tr>
 									<tr>
@@ -4470,6 +4947,9 @@
 										</td>
 										<td class="xl74" align="right">
 											14.5
+										</td>
+										<td class="xl74" align="right">
+											20.3
 										</td>
 										<td class="xl74" align="right">
 											11.2
@@ -4493,6 +4973,9 @@
 										</td>
 										<td class="xl75" align="right">
 											<font color="blue">2.69X</font>
+										</td>
+										<td class="xl75" align="right">
+											<font color="blue">3.76X</font>
 										</td>
 										<td class="xl75" align="right">
 											<font color="blue">2.07X</font>
@@ -5058,6 +5541,37 @@
 		</div>
 	</div>
 	<!--//Gallery-->
+
+	<!--Link-->
+	<div id="link" class="work">
+		<div class="container">
+			<h3 class="title"> Link</h3>
+			<div class="col-md-8 about-left" style="text-indent:2em">
+				<p><br></p>
+				<p style="text-indent:0em">MemLock's Website:</p>
+				<p><br></p>
+				<p style="text-indent:4em"><font color="black" size="5"><a href="https://icse2020-memlock.github.io/">https://icse2020-memlock.github.io/</a></font></p>
+				<p><br></p>
+				<p style="text-indent:0em">MemLock's Github:</p>
+				<p><br></p>
+				<p style="text-indent:4em"><font color="black" size="5"><a href="https://github.com/ICSE2020-MemLock/MemLock">https://github.com/ICSE2020-MemLock/MemLock</a></font></p>
+				<p><br></p>
+				<p style="text-indent:0em">MemLock's Benchmark:</p>
+				<p><br></p>
+				<p style="text-indent:4em"><font color="black" size="5"><a href="https://codeload.github.com/ICSE2020-MemLock/MemLock_Benchmark/zip/master">MemLock_Benchmark.zip</a></font></p>
+				<p><br></p>
+				<p style="text-indent:0em">MemLock's Publication:</p>
+				<p><br></p>
+				<p style="text-indent:4em"><font color="black" size="5"><a href="https://wcventure.github.io/pdf/ICSE2020_MemLock.pdf">ICSE2020-MemLock.pdf</a></font></p>
+			</div>
+			<div class="col-md-4 about-right">
+				<img src="Html/images/githubbig.jpg" width="85%" alt=""/>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//Link-->
 	
 	<!--footer-->
 	<div class="footer">
